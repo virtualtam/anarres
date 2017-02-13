@@ -1,0 +1,11 @@
+---
+- name: Install networking utilities
+  pacman: name={{ item }} state=present
+  with_items:
+    - bind-tools
+    - curl
+    - net-tools
+    - nmap
+    - tcpdump
+    - whois
+    - wget

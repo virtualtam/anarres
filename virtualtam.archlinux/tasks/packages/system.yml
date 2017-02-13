@@ -1,0 +1,7 @@
+---
+- name: Install system utilities
+  pacman: name={{ item }} state=present
+  with_items:
+    - acpi
+    - dmidecode
+    - htop

@@ -1,0 +1,8 @@
+---
+- name: Install multimedia software
+  pacman: name={{ item }} state=present
+  with_items:
+    - hunspell
+    - hunspell-en
+    - mcabber
+    - moc

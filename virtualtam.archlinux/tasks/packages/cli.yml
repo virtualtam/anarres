@@ -1,0 +1,15 @@
+---
+- name: Install CLI utilities
+  pacman: name={{ item }} state=present
+  with_items:
+    - git
+    - gnupg
+    - mercurial
+    - most
+    - ncurses
+    - pigz
+    - the_silver_searcher
+    - tmux
+    - unzip
+    - xclip
+    - zip

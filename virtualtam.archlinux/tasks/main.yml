@@ -1,3 +1,10 @@
 ---
+# Core
+- include: packages/cli.yml
+- include: packages/dev.yml
+- include: packages/networking.yml
+- include: packages/system.yml
+
+# Extras
 - include: packages/lulz.yml
-  when: {{ arch_lulz }} == True
+  when: "{{ arch_lulz }} == True"
