@@ -1,4 +1,7 @@
 ---
+- name: Refresh package cache
+  pacman: update_cache=yes
+
 # Core
 - include: packages/cli.yml
 - include: packages/dev.yml
@@ -6,5 +9,8 @@
 - include: packages/system.yml
 
 # Extras
+- include: packages/games.yml
+  when: "{{ arch_games }} == True"
+
 - include: packages/lulz.yml
   when: "{{ arch_lulz }} == True"

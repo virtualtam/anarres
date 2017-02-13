@@ -1,0 +1,8 @@
+---
+- name: Install games
+  pacman: name={{ item }} state=present
+  with_items:
+    - dolphin-emu
+    - minetest
+    - nethack
+    - steam

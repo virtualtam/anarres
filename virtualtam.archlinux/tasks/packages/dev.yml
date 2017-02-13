@@ -2,8 +2,15 @@
 - name: Install development tools
   pacman: name={{ item }} state=present
   with_items:
+    - auctex
+    - clang
     - cmake
     - extra-cmake-modules
     - doxygen
+    - emacs-nox
     - gperf
+    - graphviz
+    - maven
+    - nano
+    - shellcheck
     - uncrustify
