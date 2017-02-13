@@ -1,0 +1,3 @@
+---
+- include: packages/lulz.yml
+  when: {{ arch_lulz }} == True

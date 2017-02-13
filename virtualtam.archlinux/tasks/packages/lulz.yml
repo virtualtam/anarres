@@ -1,0 +1,12 @@
+---
+- name: Installz teh pkgz fur teh lulz!
+  pacman: name={{ item }} state=present
+  with_items:
+    - alsi
+    - cowsay
+    - doge
+    - fortune-mod
+    - lolcat
+    - nyancat
+    - ponysay
+    - talkfilters
