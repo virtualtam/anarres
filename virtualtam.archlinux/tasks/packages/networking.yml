@@ -4,6 +4,8 @@
   with_items:
     - bind-tools
     - curl
+    - iperf
+    - iperf3
     - net-tools
     - nmap
     - tcpdump

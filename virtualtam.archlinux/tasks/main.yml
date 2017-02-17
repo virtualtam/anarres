@@ -8,6 +8,9 @@
 - include: packages/networking.yml
 - include: packages/system.yml
 
+# Desktop
+- include: packages/desktop.yml
+
 # Extras
 - include: packages/games.yml
   when: "{{ arch_games }} == True"

@@ -2,7 +2,23 @@
 - name: Install multimedia software
   pacman: name={{ item }} state=present
   with_items:
+    - calibre
+    - ffmpeg
+    - flashplugin
+    - gimp
     - hunspell
+    - hunspell-fr
     - hunspell-en
+    - imagemagick
     - mcabber
     - moc
+    - mpv
+    - mumble
+    - picard
+    - smplayer
+    - sonnet
+    - zathura
+    - zathura-cb
+    - zathura-djvu
+    - zathura-pdf-poppler
+    - zathura-ps

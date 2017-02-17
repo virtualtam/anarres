@@ -4,4 +4,6 @@
   with_items:
     - acpi
     - dmidecode
+    - glances
+    - gparted
     - htop
