@@ -7,7 +7,13 @@
     - mercurial
     - most
     - ncurses
+    - p7zip
     - pigz
+    - python-pip
+    - python-pygments
+    - python-virtualenv
+    - ripgrep
+    - rsync
     - the_silver_searcher
     - tmux
     - unzip

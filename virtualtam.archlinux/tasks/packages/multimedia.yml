@@ -7,6 +7,9 @@
     - firefox
     - flashplugin
     - gimp
+    - gimp-plugin-gmic
+    - gmic
+    - inkscape
     - hunspell
     - hunspell-fr
     - hunspell-en

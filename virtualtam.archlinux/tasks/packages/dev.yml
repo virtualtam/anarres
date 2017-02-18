@@ -13,4 +13,9 @@
     - maven
     - nano
     - shellcheck
+    - texlive-bin
+    - texlive-core
+    - texlive-fontsextra
+    - texlive-latexextra
+    - texlive-pictures
     - uncrustify

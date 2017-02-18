@@ -5,9 +5,13 @@
     - awesome
     - breeze-icons
     - gpicview
+    - gvfs
+    - gvfs-gphoto2
     - lxappearance
     - oxygen-icons
     - pcmanfm
     - qt5ct
     - redshift
+    - rxvt-unicode-terminfo
+    - udiskie
     - xarchiver
