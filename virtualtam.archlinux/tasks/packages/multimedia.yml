@@ -4,6 +4,7 @@
   with_items:
     - calibre
     - ffmpeg
+    - firefox
     - flashplugin
     - gimp
     - hunspell
@@ -15,6 +16,7 @@
     - mpv
     - mumble
     - picard
+    - thunderbird
     - smplayer
     - sonnet
     - zathura

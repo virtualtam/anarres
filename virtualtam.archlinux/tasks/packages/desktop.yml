@@ -1,10 +1,13 @@
 ---
----
 - name: AwesomeWM Desktop
   pacman: name={{ item }} state=present
   with_items:
+    - awesome
     - breeze-icons
-    - gwenview
+    - gpicview
+    - lxappearance
     - oxygen-icons
     - pcmanfm
+    - qt5ct
+    - redshift
     - xarchiver

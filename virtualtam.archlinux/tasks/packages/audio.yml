@@ -1,0 +1,14 @@
+---
+- name: Audio production
+  pacman: name={{ item }} state=present
+  with_items:
+    - alsa-plugins
+    - alsa-utils
+    - ardour
+    - jalv
+    - lilypond
+    - lv2
+    - musescore
+    - qjackctl
+    - jack2-dbus
+    - timidity++

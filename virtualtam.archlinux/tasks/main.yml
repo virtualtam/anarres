@@ -9,6 +9,7 @@
 - include: packages/system.yml
 
 # Desktop
+- include: packages/audio.yml
 - include: packages/desktop.yml
 
 # Extras
