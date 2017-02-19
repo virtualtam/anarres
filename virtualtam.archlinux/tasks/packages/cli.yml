@@ -9,6 +9,8 @@
     - ncurses
     - p7zip
     - pigz
+    - powerline
+    - powerline-fonts
     - python-pip
     - python-pygments
     - python-virtualenv

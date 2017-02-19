@@ -13,5 +13,7 @@
     - qt5ct
     - redshift
     - rxvt-unicode-terminfo
+    - termite
+    - termite-terminfo
     - udiskie
     - xarchiver
