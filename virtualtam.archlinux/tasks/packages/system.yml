@@ -6,4 +6,8 @@
     - dmidecode
     - glances
     - gparted
+    - haveged
     - htop
+    - namcap
+    - pkgfile
+    - strace

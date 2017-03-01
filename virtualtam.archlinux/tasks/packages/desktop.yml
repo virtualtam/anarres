@@ -4,15 +4,18 @@
   with_items:
     - awesome
     - breeze-icons
+    - fltk
     - gpicview
     - gvfs
     - gvfs-gphoto2
     - lxappearance
+    - numlockx
     - oxygen-icons
     - pcmanfm
     - qt5ct
     - redshift
     - rxvt-unicode-terminfo
+    - scrot
     - termite
     - termite-terminfo
     - udiskie

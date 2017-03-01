@@ -3,8 +3,12 @@
   pacman: name={{ item }} state=present
   with_items:
     - alsi
+    - asciiquarium
+    - banner
+    - cmatrix
     - cowsay
     - doge
+    - figlet
     - fortune-mod
     - lolcat
     - nyancat

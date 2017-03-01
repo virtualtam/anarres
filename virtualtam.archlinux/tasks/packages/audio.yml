@@ -5,10 +5,14 @@
     - alsa-plugins
     - alsa-utils
     - ardour
+    - fftw
+    - flac
+    - flac2all
     - jalv
     - lilypond
     - lv2
     - musescore
     - qjackctl
     - jack2-dbus
+    - rubberband
     - timidity++

@@ -2,9 +2,14 @@
 - name: Install development tools
   pacman: name={{ item }} state=present
   with_items:
+    - asciidoc
     - auctex
+    - boost
+    - boost-libs
     - clang
     - cmake
+    - ctags
+    - gource
     - extra-cmake-modules
     - doxygen
     - emacs-nox
@@ -12,6 +17,7 @@
     - graphviz
     - maven
     - nano
+    - poedit
     - shellcheck
     - texlive-bin
     - texlive-core
@@ -19,3 +25,4 @@
     - texlive-latexextra
     - texlive-pictures
     - uncrustify
+    - valgrind

@@ -2,22 +2,30 @@
 - name: Install CLI utilities
   pacman: name={{ item }} state=present
   with_items:
+    - arch-wiki-docs
+    - arch-wiki-lite
+    - bash-completion
+    - dialog
     - git
     - gnupg
+    - lynx
     - mercurial
     - most
     - ncurses
     - p7zip
     - pigz
+    - pinentry
     - powerline
     - powerline-fonts
     - python-pip
     - python-pygments
     - python-virtualenv
+    - ranger
     - ripgrep
     - rsync
     - the_silver_searcher
     - tmux
+    - unrar
     - unzip
     - xclip
     - zip

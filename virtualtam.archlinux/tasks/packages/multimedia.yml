@@ -2,13 +2,19 @@
 - name: Install multimedia software
   pacman: name={{ item }} state=present
   with_items:
+    - aspell
+    - aspell-en
+    - aspell-fr
     - calibre
+    - chromium
+    - espeak
     - ffmpeg
     - firefox
     - flashplugin
     - gimp
     - gimp-plugin-gmic
     - gmic
+    - gstreamer
     - inkscape
     - hunspell
     - hunspell-fr
@@ -19,9 +25,11 @@
     - mpv
     - mumble
     - picard
+    - teamspeak3
     - thunderbird
     - smplayer
     - sonnet
+    - transmission-qt
     - zathura
     - zathura-cb
     - zathura-djvu

@@ -3,11 +3,15 @@
   pacman: name={{ item }} state=present
   with_items:
     - bind-tools
+    - bridge-utils
     - curl
+    - ifplugd
     - iperf
     - iperf3
+    - iptraf-ng
     - net-tools
     - nmap
     - tcpdump
+    - traceroute
     - whois
     - wget
