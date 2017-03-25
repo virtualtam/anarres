@@ -1,18 +1,18 @@
 ---
-- name: Refresh package cache
-  pacman: update_cache=yes
+# System configuration
+- include: pacman.yml
 
-# Core
+# Packages - Core
 - include: packages/cli.yml
 - include: packages/dev.yml
 - include: packages/networking.yml
 - include: packages/system.yml
 
-# Desktop
+# Packages - Desktop
 - include: packages/audio.yml
 - include: packages/desktop.yml
 
-# Extras
+# Packages - Extras
 - include: packages/games.yml
   when: "{{ arch_games }} == True"
 

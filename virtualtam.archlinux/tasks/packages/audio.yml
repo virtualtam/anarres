@@ -1,4 +1,7 @@
 ---
+- name: Jack2 audio server
+  pacman: name=jack2-dbus state=present force=yes
+
 - name: Audio production
   pacman: name={{ item }} state=present
   with_items:
@@ -7,12 +10,13 @@
     - ardour
     - fftw
     - flac
-    - flac2all
     - jalv
+    - libffado
+    - libsamplerate
     - lilypond
     - lv2
     - musescore
+    - opus
     - qjackctl
-    - jack2-dbus
     - rubberband
     - timidity++

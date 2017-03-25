@@ -2,7 +2,6 @@
 - name: Installz teh pkgz fur teh lulz!
   pacman: name={{ item }} state=present
   with_items:
-    - alsi
     - asciiquarium
     - banner
     - cmatrix
