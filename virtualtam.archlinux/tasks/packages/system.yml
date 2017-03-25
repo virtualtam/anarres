@@ -8,6 +8,7 @@
     - gparted
     - haveged
     - htop
+    - lshw
     - namcap
     - pkgfile
     - strace

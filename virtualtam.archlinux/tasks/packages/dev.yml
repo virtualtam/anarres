@@ -6,6 +6,7 @@
     - auctex
     - boost
     - boost-libs
+    - check
     - clang
     - cmake
     - ctags
