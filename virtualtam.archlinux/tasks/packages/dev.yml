@@ -1,11 +1,19 @@
 ---
+- name: Text editors
+  pacman: name={{ item }} state=present
+  with_items:
+    - auctex
+    - emacs-nox
+    - nano
+    - poedit
+
 - name: Install development tools
   pacman: name={{ item }} state=present
   with_items:
     - asciidoc
-    - auctex
     - boost
     - boost-libs
+    - ccache
     - check
     - clang
     - cmake
@@ -13,12 +21,9 @@
     - gource
     - extra-cmake-modules
     - doxygen
-    - emacs-nox
     - gperf
     - graphviz
     - maven
-    - nano
-    - poedit
     - shellcheck
     - texlive-bin
     - texlive-core
@@ -27,3 +32,11 @@
     - texlive-pictures
     - uncrustify
     - valgrind
+
+- name: Development - Python
+  pacman: name={{ item }} state=present
+  with_items:
+    - hardening-wrapper
+    - mpdecimal
+    - python-requests
+    - python-virtualenv-clone

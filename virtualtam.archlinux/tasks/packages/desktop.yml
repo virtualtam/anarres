@@ -1,7 +1,22 @@
 ---
+- name: Install LightDM
+  pacman: name={{ item }} state=present
+  with_items:
+    - lightdm
+    - lightdm-gtk-greeter
+    - light-locker
+
+- name: Configure LightDM users
+  lineinfile:
+    dest: /etc/lightdm/users.conf
+    line: 'hidden-users=nobody nobody4 noaccess {{ ansible_user }}'
+    regexp: '^hidden-users'
+
 - name: AwesomeWM Desktop
   pacman: name={{ item }} state=present
   with_items:
+    - accountsservice
+    - arc-gtk-theme
     - awesome
     - breeze-icons
     - fltk
@@ -10,13 +25,14 @@
     - gvfs-gphoto2
     - lxappearance
     - numlockx
-    - oxygen-icons
     - pcmanfm
     - qt5ct
     - redshift
+    - rxvt-unicode
     - rxvt-unicode-terminfo
     - scrot
     - termite
     - termite-terminfo
+    - tk
     - udiskie
     - xarchiver

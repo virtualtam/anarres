@@ -11,6 +11,7 @@
 # Packages - Desktop
 - include: packages/audio.yml
 - include: packages/desktop.yml
+- include: packages/multimedia.yml
 
 # Packages - Extras
 - include: packages/games.yml
