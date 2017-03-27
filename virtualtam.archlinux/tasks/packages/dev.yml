@@ -18,12 +18,14 @@
     - clang
     - cmake
     - ctags
+    - git
     - gource
     - extra-cmake-modules
     - doxygen
     - gperf
     - graphviz
     - maven
+    - mercurial
     - shellcheck
     - texlive-bin
     - texlive-core
@@ -38,5 +40,8 @@
   with_items:
     - hardening-wrapper
     - mpdecimal
+    - python-pip
+    - python-pygments
     - python-requests
+    - python-virtualenv
     - python-virtualenv-clone
