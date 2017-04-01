@@ -11,6 +11,7 @@
     - fftw
     - flac
     - jalv
+    - lash
     - libffado
     - libsamplerate
     - lilypond
@@ -20,3 +21,10 @@
     - qjackctl
     - rubberband
     - timidity++
+
+- name: Audio - Allow LASH service
+  lineinfile:
+    dest: '/etc/services'
+    line: 'lash            14541/tcp'
+    regexp: '^lash'
+    insertafter: 'xpra            14500/tcp'
