@@ -18,9 +18,11 @@
     - lv2
     - musescore
     - opus
+    - portsmf
     - qjackctl
     - rubberband
     - timidity++
+    - twolame
 
 - name: Audio - Allow LASH service
   lineinfile:

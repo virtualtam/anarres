@@ -11,6 +11,7 @@
   pacman: name={{ item }} state=present
   with_items:
     - asciidoc
+    - bc
     - boost
     - boost-libs
     - ccache
@@ -40,6 +41,7 @@
   with_items:
     - hardening-wrapper
     - mpdecimal
+    - pygmentize
     - python-pip
     - python-pygments
     - python-requests
