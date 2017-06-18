@@ -36,6 +36,12 @@
     - uncrustify
     - valgrind
 
+- name: Development - Haskell
+  pacman: name={{ item }} state=present
+  with_items:
+    - cabal-install
+    - ghc
+
 - name: Development - Python
   pacman: name={{ item }} state=present
   with_items:
