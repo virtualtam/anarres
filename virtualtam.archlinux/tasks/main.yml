@@ -1,7 +1,4 @@
 ---
-# System configuration
-- include: pacman.yml
-
 # Packages - Core
 - include: packages/cli.yml
 - include: packages/dev.yml
@@ -15,7 +12,7 @@
 
 # Packages - Extras
 - include: packages/games.yml
-  when: "{{ arch_games }} == True"
+  when: arch_games
 
 - include: packages/lulz.yml
-  when: "{{ arch_lulz }} == True"
+  when: arch_lulz

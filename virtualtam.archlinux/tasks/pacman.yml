@@ -1,3 +1,0 @@
----
-- name: Refresh package cache
-  pacman: update_cache=yes
