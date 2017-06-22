@@ -1,25 +1,43 @@
 ---
-- name: Jack2 audio server
-  pacman: name=jack2-dbus state=present force=yes
+- name: Audio - Install (force) Jack2 audio server
+  pacman:
+    name: jack2-dbus
+    state: present
+    force: yes
 
-- name: Audio production
-  pacman: name={{ item }} state=present
+- name: Audio - Install servers and utilities
+  pacman:
+    name: "{{ item }}"
+    state: present
   with_items:
+    - a2jmidid
     - alsa-plugins
     - alsa-utils
-    - ardour
+    - pulseaudio
+    - pulseaudio-jack
+    - qjackctl
+
+- name: Audio - Install codecs
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
     - fftw
     - flac
-    - jalv
     - libffado
+    - opus
+    - twolame
+
+- name: Audio - Install applications
+  pacman: name={{ item }} state=present
+  with_items:
+    - ardour
+    - jalv
     - libsamplerate
     - lilypond
     - lv2
     - musescore
-    - opus
     - portsmf
-    - qjackctl
     - rubberband
     - supercollider
     - timidity++
-    - twolame
