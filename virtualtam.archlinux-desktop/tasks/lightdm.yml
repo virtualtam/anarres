@@ -1,0 +1,13 @@
+---
+- name: Install LightDM
+  pacman: name={{ item }} state=present
+  with_items:
+    - lightdm
+    - lightdm-gtk-greeter
+    - light-locker
+
+- name: Configure LightDM users
+  lineinfile:
+    dest: /etc/lightdm/users.conf
+    line: 'hidden-users=nobody nobody4 noaccess {{ ansible_user }}'
+    regexp: '^hidden-users'

@@ -1,0 +1,14 @@
+---
+- name: Development - Python
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - hardening-wrapper
+    - mpdecimal
+    - pygmentize
+    - python-pip
+    - python-pygments
+    - python-requests
+    - python-virtualenv
+    - python-virtualenv-clone

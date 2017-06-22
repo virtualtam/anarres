@@ -29,7 +29,9 @@
     - twolame
 
 - name: Audio - Install applications
-  pacman: name={{ item }} state=present
+  pacman:
+    name: "{{ item }}"
+    state: present
   with_items:
     - ardour
     - jalv

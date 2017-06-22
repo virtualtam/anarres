@@ -1,0 +1,9 @@
+---
+- name: Text editors
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - emacs-nox
+    - nano
+    - poedit

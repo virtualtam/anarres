@@ -1,18 +1,9 @@
 ---
 # Packages - Core
-- include: packages/cli.yml
-- include: packages/dev.yml
-- include: packages/networking.yml
-- include: packages/system.yml
-
-# Packages - Desktop
-- include: packages/audio.yml
-- include: packages/desktop.yml
-- include: packages/multimedia.yml
+- include: cli.yml
+- include: networking.yml
+- include: system.yml
 
 # Packages - Extras
-- include: packages/games.yml
-  when: arch_games
-
-- include: packages/lulz.yml
+- include: lulz.yml
   when: arch_lulz

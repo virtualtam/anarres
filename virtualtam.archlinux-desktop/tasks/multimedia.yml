@@ -1,0 +1,75 @@
+---
+- name: Install A/V libraries
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - ffmpeg
+    - gstreamer
+
+- name: Install dictionaries
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - aspell
+    - aspell-en
+    - aspell-fr
+    - hunspell
+    - hunspell-fr
+    - hunspell-en
+
+- name: Install eBook and PDF readers
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - calibre
+    - zathura
+    - zathura-cb
+    - zathura-djvu
+    - zathura-pdf-poppler
+    - zathura-ps
+
+- name: Install Web browsers
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - chromium
+    - firefox
+    - flashplugin
+    - thunderbird
+
+- name: Install media players
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - moc
+    - mpv
+    - smplayer
+
+- name: Install IM clients
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - mcabber
+    - mumble
+    - teamspeak3
+
+- name: Install multimedia software
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - espeak
+    - gimp
+    - gimp-plugin-gmic
+    - gmic
+    - inkscape
+    - imagemagick
+    - picard
+    - sonnet
+    - transmission-qt

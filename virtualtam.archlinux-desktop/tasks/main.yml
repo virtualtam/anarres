@@ -1,0 +1,9 @@
+---
+- include: lightdm.yml
+- include: awesome.yml
+- include: audio.yml
+- include: multimedia.yml
+
+# Extras
+- include: games.yml
+  when: arch_games

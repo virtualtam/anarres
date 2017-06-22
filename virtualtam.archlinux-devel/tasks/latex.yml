@@ -1,0 +1,12 @@
+---
+- name: LaTeX
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - auctex
+    - texlive-bin
+    - texlive-core
+    - texlive-fontsextra
+    - texlive-latexextra
+    - texlive-pictures

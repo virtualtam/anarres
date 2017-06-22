@@ -1,6 +1,3 @@
 ---
-# Gaming environment
-arch_games: false
-
 # Goodies & WTF
-arch_lulz: False
+arch_lulz: no

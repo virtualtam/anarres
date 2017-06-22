@@ -1,0 +1,8 @@
+---
+- name: Install SCM tools
+  pacman:
+    name: "{{ item }}"
+    state: present
+    - git
+    - gource
+    - mercurial
