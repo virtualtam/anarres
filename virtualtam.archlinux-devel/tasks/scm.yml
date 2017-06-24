@@ -3,6 +3,9 @@
   pacman:
     name: "{{ item }}"
     state: present
+  with_items:
+    - cvs
     - git
     - gource
     - mercurial
+    - subversion
