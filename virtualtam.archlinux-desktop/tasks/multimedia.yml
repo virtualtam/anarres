@@ -39,6 +39,7 @@
     - chromium
     - firefox
     - flashplugin
+    - lib32-flashplugin
     - thunderbird
 
 - name: Install media players

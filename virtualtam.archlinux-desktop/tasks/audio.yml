@@ -13,6 +13,7 @@
     - a2jmidid
     - alsa-plugins
     - alsa-utils
+    - pavucontrol
     - pulseaudio
     - pulseaudio-jack
     - qjackctl
