@@ -1,0 +1,7 @@
+---
+environment_locales:
+  - en_GB
+  - en_US
+  - fr_FR
+
+environment_timezone: Europe/Paris
