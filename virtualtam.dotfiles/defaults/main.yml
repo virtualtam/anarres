@@ -1,0 +1,17 @@
+---
+dotfiles_user_name: johndoe
+dotfiles_user_group: nobodies
+dotfiles_user_nick: John Doe
+dotfiles_user_email: john@do.es
+
+dotfiles_awesome_version: 4
+
+dotfiles_git_repo: 'https://github.com/virtualtam/dotfiles.git'
+dotfiles_git_dest: "~{{ dotfiles_user_name }}/.dots"
+
+dotfiles_emacs_modes:
+  - modes
+  - modes-ide
+  - modes-audio
+  - modes-devops
+  - modes-extra

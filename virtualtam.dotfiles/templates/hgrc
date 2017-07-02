@@ -1,0 +1,5 @@
+[ui]
+username = {{ dotfiles_user_nick }} <{{ dotfiles_user_email }}>
+ignore = {{ dotfiles_git_dest }}/hg/ignore
+
+%include {{ dotfiles_git_dest }}/hg/main
