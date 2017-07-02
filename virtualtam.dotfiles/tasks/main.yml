@@ -1,11 +1,25 @@
 ---
-- name: Clone repository
+- name: "[{{ dotfiles_user_name }}] Install dependencies"
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - git
+    - "{{ dotfiles_user_shell }}"
+
+- name: "[{{ dotfiles_user_name }}] Create user"
+  user:
+    name: "{{ dotfiles_user_name }}"
+    group: "{{ dotfiles_user_group }}"
+    shell: "/bin/{{ dotfiles_user_shell }}"
+
+- name: "[{{ dotfiles_user_name }}] Clone dotfiles repository"
   git:
     repo: "{{ dotfiles_git_repo }}"
     dest: "{{ dotfiles_git_dest }}"
   become_user: "{{ dotfiles_user_name }}"
 
-- name: Deploy configuration symlinks under ~/.config
+- name: "[{{ dotfiles_user_name }}] Deploy configuration symlinks under ~/.config"
   file:
     src: "{{ dotfiles_git_dest }}/config/{{ item.src }}"
     dest: "~{{ dotfiles_user_name }}/.config/{{ item.dest }}"
@@ -20,7 +34,7 @@
     - src: zathura
       dest: zathura
 
-- name: Deploy configuration symlinks under ~/
+- name: "[{{ dotfiles_user_name }}] Deploy configuration symlinks under ~/"
   file:
     src: "{{ dotfiles_git_dest }}/{{ item.src }}"
     dest: "~{{ dotfiles_user_name }}/{{ item.dest }}"
@@ -39,7 +53,7 @@
     - src: zsh/rc.sh
       dest: .zshrc
 
-- name: Deploy initial Emacs configuration
+- name: "[{{ dotfiles_user_name }}] Deploy initial Emacs configuration"
   template:
     src: emacs.el
     dest: "~{{ dotfiles_user_name }}/.emacs"
@@ -48,7 +62,7 @@
     force: no
     mode: 0644
 
-- name: Deploy Git configuration
+- name: "[{{ dotfiles_user_name }}] Deploy Git configuration"
   template:
     src: gitconfig
     dest: "~{{ dotfiles_user_name }}/.gitconfig"
@@ -56,7 +70,7 @@
     group: "{{ dotfiles_user_group }}"
     mode: 0644
 
-- name: Deploy Mercurial configuration
+- name: "[{{ dotfiles_user_name }}] Deploy Mercurial configuration"
   template:
     src: hgrc
     dest: "~{{ dotfiles_user_name }}/.hgrc"
