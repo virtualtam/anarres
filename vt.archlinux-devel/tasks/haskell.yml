@@ -6,3 +6,4 @@
   with_items:
     - cabal-install
     - ghc
+    - ghc-static
