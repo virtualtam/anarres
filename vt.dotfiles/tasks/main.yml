@@ -46,6 +46,8 @@
       dest: .bashrc
     - src: bash/aliases.sh
       dest: .bash_aliases
+    - src: profile.sh
+      dest: .profile
     - src: tmux/tmux.conf
       dest: .tmux.conf
     - src: Xresources
