@@ -6,18 +6,7 @@
   with_items:
     - asciidoc
     - bc
-    - boost
-    - boost-libs
-    - ccache
-    - check
-    - clang
-    - cmake
     - ctags
-    - extra-cmake-modules
-    - doxygen
-    - gperf
     - graphviz
     - maven
     - shellcheck
-    - uncrustify
-    - valgrind
