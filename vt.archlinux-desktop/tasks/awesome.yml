@@ -1,6 +1,8 @@
 ---
 - name: AwesomeWM Desktop
-  pacman: name={{ item }} state=present
+  pacman:
+    name: "{{ item }}"
+    state: present
   with_items:
     - accountsservice
     - arc-gtk-theme
@@ -13,7 +15,6 @@
     - lxappearance
     - numix-gtk-theme
     - numlockx
-    - pcmanfm
     - qt5ct
     - redshift
     - rxvt-unicode
@@ -23,4 +24,23 @@
     - termite-terminfo
     - tk
     - udiskie
+
+- name: PCManFM environment
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - ffmpegthumbnailer
+    - imagemagick
+    - libgsf
+    - pcmanfm
     - xarchiver
+
+- name: Add an ImageMagick PDF thumbnailer
+  file:
+    src: imagemagick-pdf.thumbnailer
+    path: /usr/share/thumbnailers/imagemagick-pdf.thumbnailer
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes

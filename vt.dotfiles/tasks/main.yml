@@ -19,7 +19,7 @@
     dest: "{{ dotfiles_git_dest }}"
   become_user: "{{ dotfiles_user_name }}"
 
-- name: "[{{ dotfiles_user_name }}] Deploy configuration symlinks under ~/.config"
+- name: "[{{ dotfiles_user_name }}] Deploy symlinks under ~/.config"
   file:
     src: "{{ dotfiles_git_dest }}/config/{{ item.src }}"
     dest: "~{{ dotfiles_user_name }}/.config/{{ item.dest }}"
@@ -34,7 +34,7 @@
     - src: zathura
       dest: zathura
 
-- name: "[{{ dotfiles_user_name }}] Deploy configuration symlinks under ~/"
+- name: "[{{ dotfiles_user_name }}] Deploy symlinks under ~/"
   file:
     src: "{{ dotfiles_git_dest }}/{{ item.src }}"
     dest: "~{{ dotfiles_user_name }}/{{ item.dest }}"
