@@ -7,3 +7,12 @@
     - cabal-install
     - ghc
     - ghc-static
+
+- name: Development - Haskell libraries
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - haskell-scientific
+    - haskell-streaming-commons
+    - haskell-websockets
