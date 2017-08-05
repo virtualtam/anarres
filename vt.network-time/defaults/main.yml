@@ -1,0 +1,15 @@
+# Host timezone
+ntp_timezone: Europe/Paris
+
+# Primary NTP servers
+ntp_servers:
+  - 0.fr.pool.ntp.org
+  - 1.fr.pool.ntp.org
+  - 2.fr.pool.ntp.org
+  - 3.fr.pool.ntp.org
+
+# Fallback NTP servers
+ntp_fallback_servers:
+  - ntp.ubuntu.org
+  - 0.pool.ntp.org
+  - 1.pool.ntp.org

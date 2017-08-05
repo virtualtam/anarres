@@ -1,0 +1,23 @@
+---
+- name: Set the server time zone to {{ ntp_timezone }}
+  timezone:
+    name: "{{ ntp_timezone }}"
+
+- name: Deploy timesyncd configuration
+  template:
+    src: systemd/timesyncd.conf
+    dest: /etc/systemd/timesyncd.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  notify:
+    - restart timesyncd
+  when: ansible_virtualization_role != 'guest'
+
+- name: Ensure the timesyncd service is enabled and started
+  service:
+    name: systemd-timesyncd
+    enabled: yes
+    state: started
+  when: ansible_virtualization_role != 'guest'
