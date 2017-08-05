@@ -37,9 +37,9 @@
     - xarchiver
 
 - name: Add an ImageMagick PDF thumbnailer
-  file:
+  copy:
     src: imagemagick-pdf.thumbnailer
-    path: /usr/share/thumbnailers/imagemagick-pdf.thumbnailer
+    dest: /usr/share/thumbnailers/imagemagick-pdf.thumbnailer
     owner: root
     group: root
     mode: 0644
