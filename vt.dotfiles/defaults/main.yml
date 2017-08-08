@@ -4,6 +4,7 @@ dotfiles_user_group: nobodies
 dotfiles_user_nick: John Doe
 dotfiles_user_email: john@do.es
 dotfiles_user_shell: zsh
+dotfiles_user_git_editor: vi
 
 dotfiles_awesome_version: 4
 

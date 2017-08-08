@@ -2,6 +2,7 @@
     email = {{ dotfiles_user_email }}
     name = {{ dotfiles_user_nick }}
 [core]
+    editor = {{ dotfiles_user_git_editor }}
     excludesfile = {{ dotfiles_git_dest }}/git/exclude
 [include]
     path = {{ dotfiles_git_dest }}/git/main
