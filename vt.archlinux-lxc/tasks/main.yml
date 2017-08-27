@@ -1,0 +1,48 @@
+---
+- name: Install LXC packages and distribution-specific utilities
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - arch-install-scripts
+    - bridge-utils
+    - debootstrap
+    - lxc
+
+- name: Disable container start at boot
+  lineinfile:
+    dest: /etc/default/lxc
+    line: 'LXC_AUTO="false"'
+    regexp: '^LXC_AUTO'
+    owner: root
+    group: root
+    mode: 0644
+    create: yes
+    backup: yes
+
+- name: Enable network bridge
+  lineinfile:
+    dest: /etc/default/lxc-net
+    line: 'USE_LXC_BRIDGE="true"'
+    regexp: '^USE_LXC_BRIDGE'
+    owner: root
+    group: root
+    mode: 0644
+    create: yes
+    backup: yes
+
+- name: Configure network bridge
+  lineinfile:
+    dest: /etc/lxc/default.conf
+    line: "{{ item.line }}"
+    regexp: "{{ item.regexp }}"
+    create: yes
+    backup: yes
+    owner: root
+    group: root
+    mode: 0644
+  with_items:
+    - {regexp: 'lxc.network.type', line: 'lxc.network.type = veth'}
+    - {regexp: 'lxc.network.link', line: 'lxc.network.link = {{ lxc_bridge_name }}'}
+    - {regexp: 'lxc.network.flags', line: 'lxc.network.flags = up'}
+    - {regexp: 'lxc.network.hwaddr', line: 'lxc.network.hwaddr = 00:16:3e:xx:xx:xx'}
