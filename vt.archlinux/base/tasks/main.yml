@@ -3,7 +3,3 @@
 - include: cli.yml
 - include: networking.yml
 - include: system.yml
-
-# Packages - Extras
-- include: lulz.yml
-  when: arch_lulz
