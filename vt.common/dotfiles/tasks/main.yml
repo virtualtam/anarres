@@ -52,6 +52,8 @@
       dest: .profile
     - src: tmux/tmux.conf
       dest: .tmux.conf
+    - src: vim/init.vim
+      dest: .vimrc
     - src: Xresources
       dest: .Xresources
     - src: zsh/rc.sh
