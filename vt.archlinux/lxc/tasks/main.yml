@@ -42,7 +42,11 @@
     group: root
     mode: 0644
   with_items:
-    - {regexp: 'lxc.network.type', line: 'lxc.network.type = veth'}
-    - {regexp: 'lxc.network.link', line: 'lxc.network.link = {{ lxc_bridge_name }}'}
-    - {regexp: 'lxc.network.flags', line: 'lxc.network.flags = up'}
-    - {regexp: 'lxc.network.hwaddr', line: 'lxc.network.hwaddr = 00:16:3e:xx:xx:xx'}
+    - regexp: 'lxc.network.type'
+      line: 'lxc.network.type = veth'
+    - regexp: 'lxc.network.link'
+      line: 'lxc.network.link = {{ lxc_bridge_name }}'
+    - regexp: 'lxc.network.flags'
+      line: 'lxc.network.flags = up'
+    - regexp: 'lxc.network.hwaddr'
+      line: 'lxc.network.hwaddr = 00:16:3e:xx:xx:xx'

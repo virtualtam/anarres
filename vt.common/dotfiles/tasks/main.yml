@@ -19,6 +19,7 @@
     dest: "{{ dotfiles_git_dest }}"
     remote: origin
     version: master
+  become: yes
   become_user: "{{ dotfiles_user_name }}"
 
 - name: "[{{ dotfiles_user_name }}] Deploy symlinks under ~/.config"
