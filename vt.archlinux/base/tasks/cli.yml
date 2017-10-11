@@ -1,6 +1,8 @@
 ---
 - name: Install CLI utilities
-  pacman: name={{ item }} state=present
+  pacman:
+    name: "{{ item }}"
+    state: present
   with_items:
     - arch-wiki-docs
     - arch-wiki-lite
@@ -12,8 +14,6 @@
     - p7zip
     - pigz
     - pinentry
-    - powerline
-    - powerline-fonts
     - ranger
     - ripgrep
     - rsync
