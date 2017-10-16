@@ -1,0 +1,21 @@
+---
+- name: Install ALSA and PulseAudio
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - alsa-plugins
+    - alsa-utils
+    - pavucontrol
+    - pulseaudio
+
+- name: Install codecs
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - fftw
+    - flac
+    - libffado
+    - opus
+    - twolame
