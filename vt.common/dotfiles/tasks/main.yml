@@ -22,6 +22,14 @@
   become: yes
   become_user: "{{ dotfiles_user_name }}"
 
+- name: "[{{ dotfiles_user_name }}] Create ~/.config"
+  file:
+    dest: "~{{ dotfiles_user_name }}/.config"
+    owner: "{{ dotfiles_user_name }}"
+    group: "{{ dotfiles_user_group }}"
+    state: directory
+    mode: 0700
+
 - name: "[{{ dotfiles_user_name }}] Deploy symlinks under ~/.config"
   file:
     src: "{{ dotfiles_git_dest }}/config/{{ item.src }}"

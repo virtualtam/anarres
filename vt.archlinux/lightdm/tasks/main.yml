@@ -14,3 +14,9 @@
     dest: /etc/lightdm/users.conf
     line: 'hidden-users=nobody nobody4 noaccess {{ ansible_user }}'
     regexp: '^hidden-users'
+
+- name: Ensure LightDM is enabled and started
+  systemd:
+    name: lightdm
+    enabled: yes
+    state: started
