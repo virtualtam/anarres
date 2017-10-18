@@ -1,0 +1,26 @@
+---
+- name: Create /etc/X11/xorg.conf.d
+  file:
+    name: /etc/X11/xorg.conf.d
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Configure keyboard options
+  template:
+    src: xorg.conf.d/20-keyboard.conf
+    dest: /etc/X11/xorg.conf.d/20-keyboard.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+
+- name: Configure virtual console options
+  template:
+    src: vconsole.conf
+    dest: /etc/vconsole.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
