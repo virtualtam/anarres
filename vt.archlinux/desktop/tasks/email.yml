@@ -1,0 +1,7 @@
+---
+- name: Install email clients
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - thunderbird

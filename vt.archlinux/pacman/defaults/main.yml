@@ -1,0 +1,9 @@
+---
+pacman_repositories:
+  # - testing
+  - core
+  - extra
+  # - community-testing
+  - community
+  # - multilib-testing
+  # - multilib

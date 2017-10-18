@@ -1,3 +1,5 @@
 ---
-# Gaming environment
-arch_games: no
+desktop_install_email: no
+desktop_install_extra: no
+desktop_install_image: no
+desktop_install_messaging: no

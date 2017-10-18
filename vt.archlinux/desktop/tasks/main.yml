@@ -1,9 +1,17 @@
 ---
 - include: multimedia.yml
 
-# Extras
-- include: games.yml
-  when: arch_games
+- include: email.yml
+  when: desktop_install_email
+
+- include: image.yml
+  when: desktop_install_image
+
+- include: messaging.yml
+  when: desktop_install_messaging
+
+- include: extra.yml
+  when: desktop_install_extra
 
 - name: Terminal emulators and desktop utilities
   pacman:

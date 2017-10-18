@@ -24,7 +24,6 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - calibre
     - zathura
     - zathura-cb
     - zathura-djvu
@@ -39,8 +38,14 @@
     - chromium
     - firefox
     - flashplugin
+
+- name: Install x86 libraries (multilib)
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
     - lib32-flashplugin
-    - thunderbird
+  when: "'multilib' in pacman_repositories"
 
 - name: Install media players
   pacman:
@@ -50,27 +55,3 @@
     - moc
     - mpv
     - smplayer
-
-- name: Install IM clients
-  pacman:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - mcabber
-    - mumble
-    - teamspeak3
-
-- name: Install multimedia software
-  pacman:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - espeak
-    - gimp
-    - gimp-plugin-gmic
-    - gmic
-    - inkscape
-    - imagemagick
-    - picard
-    - sonnet
-    - transmission-qt

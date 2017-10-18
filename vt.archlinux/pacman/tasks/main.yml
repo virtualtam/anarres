@@ -1,0 +1,13 @@
+---
+- name: Deploy Pacman configuration
+  template:
+    src: pacman.conf
+    dest: /etc/pacman.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  notify:
+    - refresh pacman cache
+
+- meta: flush_handlers

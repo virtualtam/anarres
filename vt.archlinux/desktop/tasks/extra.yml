@@ -1,0 +1,11 @@
+---
+- name: Install extra multimedia software
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - calibre
+    - espeak
+    - picard
+    - sonnet
+    - transmission-qt
