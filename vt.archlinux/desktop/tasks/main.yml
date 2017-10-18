@@ -21,6 +21,7 @@
     - gpicview
     - libgnome-keyring
     - numlockx
+    - python-xdg
     - qtkeychain
     - redshift
     - rxvt-unicode

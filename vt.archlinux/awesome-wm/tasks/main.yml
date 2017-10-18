@@ -8,7 +8,9 @@
     - awesome
     - breeze-icons
     - fltk
+    - gtk-engine-murrine
     - lxappearance
     - numix-gtk-theme
+    - qt5-styleplugins
     - qt5ct
     - tk
