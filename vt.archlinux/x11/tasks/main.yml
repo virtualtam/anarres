@@ -1,0 +1,9 @@
+---
+- name: Install X.Org packages
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - xf86-input-evdev
+    - xorg-server
+    - xorg-xrdb
