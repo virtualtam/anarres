@@ -1,17 +1,17 @@
 ---
-- include: fonts.yml
-- include: multimedia.yml
+- import_tasks: fonts.yml
+- import_tasks: multimedia.yml
 
-- include: email.yml
+- import_tasks: email.yml
   when: desktop_install_email
 
-- include: image.yml
+- import_tasks: image.yml
   when: desktop_install_image
 
-- include: messaging.yml
+- import_tasks: messaging.yml
   when: desktop_install_messaging
 
-- include: extra.yml
+- import_tasks: extra.yml
   when: desktop_install_extra
 
 - name: Terminal emulators and desktop utilities

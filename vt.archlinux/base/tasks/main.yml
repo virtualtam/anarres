@@ -1,5 +1,4 @@
 ---
-# Packages - Core
-- include: cli.yml
-- include: networking.yml
-- include: system.yml
+- import_tasks: cli.yml
+- import_tasks: networking.yml
+- import_tasks: system.yml
