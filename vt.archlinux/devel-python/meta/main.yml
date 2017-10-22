@@ -1,0 +1,4 @@
+---
+dependencies:
+  - vt.archlinux/devel-base
+  - vt.archlinux/devel-cc

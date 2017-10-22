@@ -1,6 +1,0 @@
----
-- import_tasks: libraries.yml
-- import_tasks: editors.yml
-- import_tasks: python.yml
-- import_tasks: haskell.yml
-- import_tasks: latex.yml
