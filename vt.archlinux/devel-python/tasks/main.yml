@@ -8,7 +8,9 @@
     - mpdecimal
     - pygmentize
     - python-pip
+    - python-pew
     - python-pygments
     - python-requests
+    - python-tox
     - python-virtualenv
     - python-virtualenv-clone
