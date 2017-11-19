@@ -14,6 +14,7 @@
     - net-tools
     - nmap
     - openbsd-netcat
+    - radare2
     - tcpdump
     - traceroute
     - whois
