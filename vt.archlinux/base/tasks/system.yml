@@ -4,10 +4,13 @@
   with_items:
     - acpi
     - dmidecode
+    - dstat
     - glances
     - gparted
     - haveged
     - htop
+    - iftop
+    - iotop
     - lshw
     - namcap
     - pkgfile
