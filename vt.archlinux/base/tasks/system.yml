@@ -15,6 +15,7 @@
     - iotop
     - lshw
     - namcap
+    - os-prober
     - pkgfile
     - smartmontools
     - strace
