@@ -10,6 +10,14 @@
     - python-docker-pycreds
     - python-dockerpty
 
+- name: Create systemd Docker directory
+  file:
+    name: /etc/systemd/system/docker.service.d
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
 - name: Deploy service configuration
   template:
     dest: /etc/systemd/system/docker.service.d/override.conf
