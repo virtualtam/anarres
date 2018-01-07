@@ -9,6 +9,7 @@
     - dstat
     - glances
     - gparted
+    - gptfdisk
     - haveged
     - htop
     - iftop
