@@ -4,7 +4,6 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - hardening-wrapper
     - mpdecimal
     - pygmentize
     - python-pip
