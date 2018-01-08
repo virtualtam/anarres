@@ -16,6 +16,9 @@
   with_items:
     - fftw
     - flac
+    - libcue
     - libffado
+    - libmpcdec
     - opus
     - twolame
+    - wavpack
