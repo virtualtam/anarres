@@ -4,6 +4,8 @@
     name: "{{ item }}"
     state: present
   with_items:
+    - arandr
     - xf86-input-evdev
     - xorg-server
     - xorg-xrdb
+    - xorg-xrandr
