@@ -14,6 +14,17 @@
     - pulseaudio-jack
     - qjackctl
 
+- name: Install MIDI libraries and software synths
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - fluidsynth
+    - qsynth
+    - soundfont-fluid
+    - timidity++
+    - vmpk
+
 - name: Install applications
   pacman:
     name: "{{ item }}"
@@ -28,4 +39,3 @@
     - portsmf
     - rubberband
     - supercollider
-    - timidity++
