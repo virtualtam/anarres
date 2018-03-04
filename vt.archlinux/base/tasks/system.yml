@@ -14,6 +14,7 @@
     - htop
     - iftop
     - iotop
+    - lsof
     - lshw
     - namcap
     - os-prober
