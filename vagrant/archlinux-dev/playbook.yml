@@ -1,0 +1,62 @@
+---
+- name: Arch Linux development VM
+  hosts: all
+  remote_user: vagrant
+  become: yes
+  become_user: root
+
+  vars:
+    pacman_repositories:
+      - core
+      - extra
+      - community
+      - multilib
+
+    xkb_layout: fr
+
+    dotfiles_users:
+      - name: root
+        group: root
+        git_editor: vim
+      - name: virtualtam
+        group: virtualtam
+        git_editor: vim
+
+  pre_tasks:
+    - name: Remove undesired packages
+      pacman:
+        name: "{{ item }}"
+        state: absent
+      with_items:
+        - gnu-netcat
+        - yaourt
+
+    - name: Remove box user
+      user:
+        name: terry
+        state: absent
+        remove: yes
+
+  roles:
+    - vt.archlinux/pacman
+    - vt.archlinux/base
+    - vt.archlinux/x11
+    - vt.common/x11-config
+    - vt.common/network-time
+    - vt.common/locales
+    - vt.archlinux/lightdm
+    - vt.archlinux/awesome-wm
+    - vt.archlinux/audio-desktop
+    - vt.archlinux/desktop
+
+  tasks:
+    - name: Deploy dotfiles
+      include_role:
+        name: vt.common/dotfiles
+      vars:
+        dotfiles_user_name: "{{ role_item.name }}"
+        dotfiles_user_group: "{{ role_item.group }}"
+        dotfiles_user_git_editor: "{{ role_item.git_editor }}"
+      with_items: "{{ dotfiles_users }}"
+      loop_control:
+        loop_var: "role_item" 
