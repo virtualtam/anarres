@@ -1,0 +1,11 @@
+---
+ansible_user: ansible
+
+dotfiles_user_nick: John Doe
+dotfiles_user_email: john@do.es
+
+dotfiles_users:
+  - name: john
+    group: doe
+  - name: root
+    group: root

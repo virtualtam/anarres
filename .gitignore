@@ -2,8 +2,9 @@
 *.swp
 
 hosts
-group_vars/
 host_vars/
+private.yml
+secret.yml
 
 *.retry
 

@@ -1,0 +1,11 @@
+---
+pacman_repositories:
+  - core
+  - extra
+  - community
+  - multilib
+
+desktop_install_email: yes
+desktop_install_image: yes
+desktop_install_messaging: yes
+desktop_install_extra: yes
