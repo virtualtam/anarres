@@ -1,0 +1,23 @@
+---
+- hosts: archlinux
+  roles:
+    - vt.archlinux/pacman
+    - vt.archlinux/base
+    - vt.archlinux/x11
+    # - vt.common/x11-config
+    - vt.common/network-time
+    - vt.common/locales
+    - vt.archlinux/lightdm
+    - vt.archlinux/awesome-wm
+    - vt.archlinux/desktop
+    - vt.archlinux/audio-desktop
+    - vt.archlinux/audio-workstation
+    - vt.archlinux/devel-arduino
+    - vt.archlinux/devel-cc
+    - vt.archlinux/devel-haskell
+    - vt.archlinux/devel-latex
+    - vt.archlinux/devel-php
+    - vt.archlinux/devel-python
+    - vt.archlinux/docker
+    - vt.archlinux/games
+    - vt.archlinux/lulz
