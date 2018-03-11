@@ -1,0 +1,13 @@
+---
+- hosts: all
+  tasks:
+    - name: Deploy dotfiles
+      include_role:
+        name: vt.common/dotfiles
+      vars:
+        dotfiles_user_name: "{{ role_item.name }}"
+        dotfiles_user_group: "{{ role_item.group }}"
+        dotfiles_user_git_editor: "{{ role_item.git_editor }}"
+      with_items: "{{ dotfiles_users }}"
+      loop_control:
+        loop_var: "role_item"
