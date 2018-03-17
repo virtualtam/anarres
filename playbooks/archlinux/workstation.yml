@@ -10,6 +10,7 @@
     - vt.archlinux/lightdm
     - vt.archlinux/awesome-wm
     - vt.archlinux/desktop
+    - vt.archlinux/libreoffice
     - vt.archlinux/audio-desktop
     - vt.archlinux/audio-workstation
     - vt.archlinux/devel-arduino

@@ -1,0 +1,10 @@
+---
+# LibreOffice release, either:
+# - fresh
+# - still
+libreoffice_version: fresh
+
+# LibreOffice languages
+libreoffice_languages:
+  - en-GB
+  - fr

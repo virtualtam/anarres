@@ -1,0 +1,11 @@
+---
+- name: Install LibreOffice
+  pacman:
+    name: "libreoffice-{{ libreoffice_version }}"
+    state: present
+
+- name: Install LibreOffice localizations
+  pacman:
+    name: "libreoffice-{{ libreoffice_version }}-{{ item }}"
+    state: present
+  with_items: "{{ libreoffice_languages }}"
