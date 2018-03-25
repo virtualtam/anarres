@@ -5,9 +5,16 @@
     state: present
   with_items:
     - dolphin-emu
+    - mupen64plus
+    - vbam-wx
+
+- name: Install games
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
     - minetest
     - nethack
-    - vbam-wx
 
 - name: Install Steam
   pacman:
