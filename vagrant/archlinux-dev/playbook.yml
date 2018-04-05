@@ -60,3 +60,12 @@
       with_items: "{{ dotfiles_users }}"
       loop_control:
         loop_var: "role_item"
+
+    - name: Enable Systemd graphical target
+      file:
+        path: /etc/systemd/system/default.target
+        src: /usr/lib/systemd/system/graphical.target
+        state: link
+        force: yes
+        owner: root
+        group: root
