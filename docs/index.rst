@@ -38,35 +38,35 @@ Roles
    :maxdepth: 1
    :caption: Common roles:
 
-   roles/vt.common/dotfiles/README.rst
-   roles/vt.common/environment/README.rst
-   roles/vt.common/locales/README.rst
-   roles/vt.common/network-time/README.rst
-   roles/vt.common/x11-config/README.rst
+   roles/vt.common/dotfiles/README
+   roles/vt.common/environment/README
+   roles/vt.common/locales/README
+   roles/vt.common/network-time/README
+   roles/vt.common/x11-config/README
 
 
 .. toctree::
    :maxdepth: 1
    :caption: Arch Linux roles:
 
-   roles/vt.archlinux/audio-desktop/README.rst
-   roles/vt.archlinux/audio-workstation/README.rst
-   roles/vt.archlinux/awesome-wm/README.rst
-   roles/vt.archlinux/base/README.rst
-   roles/vt.archlinux/desktop/README.rst
-   roles/vt.archlinux/devel-arduino/README.rst
-   roles/vt.archlinux/devel-base/README.rst
-   roles/vt.archlinux/devel-cc/README.rst
-   roles/vt.archlinux/devel-haskell/README.rst
-   roles/vt.archlinux/devel-javascript/README.rst
-   roles/vt.archlinux/devel-latex/README.rst
-   roles/vt.archlinux/devel-php/README.rst
-   roles/vt.archlinux/devel-python/README.rst
-   roles/vt.archlinux/docker/README.rst
-   roles/vt.archlinux/games/README.rst
-   roles/vt.archlinux/libreoffice/README.rst
-   roles/vt.archlinux/lightdm/README.rst
-   roles/vt.archlinux/lulz/README.rst
-   roles/vt.archlinux/lxc/README.rst
-   roles/vt.archlinux/pacman/README.rst
-   roles/vt.archlinux/x11/README.rst
+   roles/vt.archlinux/audio-desktop/README
+   roles/vt.archlinux/audio-workstation/README
+   roles/vt.archlinux/awesome-wm/README
+   roles/vt.archlinux/base/README
+   roles/vt.archlinux/desktop/README
+   roles/vt.archlinux/devel-arduino/README
+   roles/vt.archlinux/devel-base/README
+   roles/vt.archlinux/devel-cc/README
+   roles/vt.archlinux/devel-haskell/README
+   roles/vt.archlinux/devel-javascript/README
+   roles/vt.archlinux/devel-latex/README
+   roles/vt.archlinux/devel-php/README
+   roles/vt.archlinux/devel-python/README
+   roles/vt.archlinux/docker/README
+   roles/vt.archlinux/games/README
+   roles/vt.archlinux/libreoffice/README
+   roles/vt.archlinux/lightdm/README
+   roles/vt.archlinux/lulz/README
+   roles/vt.archlinux/lxc/README
+   roles/vt.archlinux/pacman/README
+   roles/vt.archlinux/x11/README
