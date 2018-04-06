@@ -70,3 +70,11 @@ Roles
    roles/vt.archlinux/lxc/README
    roles/vt.archlinux/pacman/README
    roles/vt.archlinux/x11/README
+
+Vagrant boxes
+-------------
+
+.. toctree::
+   :maxdepth: 1
+
+   vagrant/archlinux-dev/README
