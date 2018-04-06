@@ -9,7 +9,9 @@
     - bash-completion
     - dialog
     - gnupg
+    - jq
     - lynx
+    - multitail
     - ncurses
     - p7zip
     - pigz
