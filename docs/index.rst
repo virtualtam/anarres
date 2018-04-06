@@ -2,7 +2,7 @@ Anarres
 =======
 
 Automation for your GNU/Linux workstation!
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 Anarres is a collection of `Ansible`_ roles and playbooks, and aims at
 automating (as much as possible) the setup of:
