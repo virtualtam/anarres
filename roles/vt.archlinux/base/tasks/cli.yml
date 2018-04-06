@@ -21,6 +21,7 @@
     - rsync
     - the_silver_searcher
     - tmux
+    - tmuxp
     - tree
     - unrar
     - unzip
