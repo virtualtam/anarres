@@ -15,13 +15,15 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+from datetime import datetime
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'Anarres'
-copyright = '2018, VirtualTam'
 author = 'VirtualTam'
+year = datetime.today().year
+copyright = '%s %s' % (year, author)
 
 # The short X.Y version
 version = ''
@@ -81,6 +83,9 @@ html_theme = 'alabaster'
 # documentation.
 #
 # html_theme_options = {}
+html_theme_options = {
+    'fixed_sidebar': True,
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -96,6 +101,17 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+html_sidebars = {
+    '**': [
+        'about.html',
+        'localtoc.html',
+        # 'navigation.html',
+        'relations.html',
+        # 'sourcelink.html',
+        'searchbox.html',
+        # 'donate.html',
+    ]
+}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
