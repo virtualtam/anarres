@@ -33,7 +33,7 @@ Authors and license
 ~~~~~~~~~~~~~~~~~~~
 
 ``vt.common/environment`` role was written by:
-- `VirtualTam <https://github.com/virtualtam/>`_ | `e-mail <mailto:virtualtam@flibidi.net>`_ | `Twitter <https://twitter.com/virtualtam_>`_License: `MIT <https://tldrlegal.com/license/mit-license>`_
+- `VirtualTam <https://github.com/virtualtam/>`_ | `e-mail <mailto:virtualtam@flibidi.net>`_License: `MIT <https://tldrlegal.com/license/mit-license>`_
 
 ****
 
