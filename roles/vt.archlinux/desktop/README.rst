@@ -12,7 +12,7 @@ vt.archlinux/desktop
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
-- ````
+- :doc:`/roles/vt.archlinux/pacman/README`
 
 
 Role variables

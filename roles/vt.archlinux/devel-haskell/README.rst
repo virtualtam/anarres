@@ -12,7 +12,7 @@ vt.archlinux/devel-haskell
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
-- ````
+- :doc:`/roles/vt.archlinux/devel-base/README`
 
 
 

@@ -12,7 +12,8 @@ vt.archlinux/devel-python
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
-- ````
+- :doc:`/roles/vt.archlinux/devel-base/README`
+- :doc:`/roles/vt.archlinux/devel-cc/README`
 
 
 

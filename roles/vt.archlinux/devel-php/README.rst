@@ -12,7 +12,8 @@ vt.archlinux/devel-php
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
-- ````
+- :doc:`/roles/vt.archlinux/devel-base/README`
+- :doc:`/roles/vt.archlinux/devel-javascript/README`
 
 
 
