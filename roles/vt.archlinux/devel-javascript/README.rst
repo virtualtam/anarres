@@ -7,6 +7,7 @@ vt.archlinux/devel-javascript
 
 
 
+Installs Javascript, NodeJs and front-end development libraries and tools.
 
 
 Role dependencies

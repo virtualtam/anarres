@@ -7,6 +7,7 @@ vt.archlinux/docker
 
 
 
+Installs `Docker <http://docker.com/>`_ and `Compose <https://docs.docker.com/compose/>`_.
 
 
 

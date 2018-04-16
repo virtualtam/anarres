@@ -7,6 +7,7 @@ vt.archlinux/devel-python
 
 
 
+Installs Python development libraries and tools.
 
 
 Role dependencies

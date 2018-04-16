@@ -7,6 +7,7 @@ vt.archlinux/devel-haskell
 
 
 
+Installs Haskell development libraries and tools.
 
 
 Role dependencies

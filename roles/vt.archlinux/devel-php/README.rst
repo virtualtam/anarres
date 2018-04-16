@@ -7,6 +7,7 @@ vt.archlinux/devel-php
 
 
 
+Installs PHP development libraries and tools.
 
 
 Role dependencies

@@ -1,4 +1,5 @@
 ---
+# System locales (UTF-8 usage is implied)
 locales:
   - en_GB
   - en_US

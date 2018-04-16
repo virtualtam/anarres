@@ -1,3 +1,6 @@
 ---
+# X11 keyboard layout
 xkb_layout: en
+
+# X11 keyboard model
 xkb_model: pc105

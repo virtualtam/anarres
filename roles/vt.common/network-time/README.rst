@@ -7,6 +7,21 @@ vt.common/network-time
 
 
 
+Sets the host timezone and enables `NTP <http://www.ntp.org/>`_.
+
+Note: NTP is not enabled for virtualized guests, as the system clock
+should be managed and synchronized by the hypervision host.
+
+See:
+
+- `systemd-timesyncd <https://wiki.archlinux.org/index.php/Systemd-timesyncd>`_
+- `Disable systemd-timesyncd in VirtualBox guests
+  <https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=812522;msg=17>`_
+- `How to correctly sync time in linux running as virtual guest after
+  host resumes from hibernation?
+  <https://superuser.com/questions/688127/how-to-correctly-sync-time-in-linux-running-as-virtual-guest-after-host-resumes>`_
+- `Ubuntu inside virtual machine: ntpd or ntpdate or ??? to avoid clock drift
+  <https://askubuntu.com/questions/280421/ubuntu-inside-virtual-machine-ntpd-or-ntpdate-or-to-avoid-clock-drift>`_
 
 
 

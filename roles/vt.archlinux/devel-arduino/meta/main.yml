@@ -1,3 +1,5 @@
 ---
 dependencies:
   - vt.archlinux/devel-base
+ansigenome_info:
+  synopsis: Installs the Arduino IDE

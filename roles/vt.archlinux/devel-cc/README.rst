@@ -7,6 +7,7 @@ vt.archlinux/devel-cc
 
 
 
+Installs C and C++ development libraries and tools.
 
 
 Role dependencies
