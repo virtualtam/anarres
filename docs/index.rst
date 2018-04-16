@@ -39,7 +39,6 @@ Roles
    :caption: Common roles:
 
    roles/vt.common/dotfiles/README
-   roles/vt.common/environment/README
    roles/vt.common/locales/README
    roles/vt.common/network-time/README
    roles/vt.common/x11-config/README
