@@ -6,5 +6,5 @@ libreoffice_version: fresh
 
 # LibreOffice languages
 libreoffice_languages:
-  - en-GB
+  - en-gb
   - fr
