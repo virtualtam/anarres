@@ -15,7 +15,8 @@ See:
 - `Wiki page <https://wiki.archlinux.org/index.php/Pacman>`_
 - `Home page <https://www.archlinux.org/pacman/>`_
 - `pacman (8) <https://www.archlinux.org/pacman/pacman.8.html>`_
-- `Arch Build System <https://wiki.archlinux.org/index.php/Arch_Build_System>`_
+- `Arch Build System
+  <https://wiki.archlinux.org/index.php/Arch_Build_System>`_
 - `Official repositories
   <https://wiki.archlinux.org/index.php/Official_repositories>`_
 - `Unofficial user repositories

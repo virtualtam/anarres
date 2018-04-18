@@ -7,7 +7,8 @@ vt.common/dotfiles
 
 
 
-Deploys and enables `virtualtam/dotfiles <https://github.com/virtualtam/dotfiles>`_
+Deploys and enables
+`virtualtam/dotfiles <https://github.com/virtualtam/dotfiles>`_
 for all selected users.
 
 

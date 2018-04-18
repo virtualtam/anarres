@@ -13,7 +13,8 @@ collection of fonts for office and development usage.
 Arch wiki articles:
 
 - `Fonts <https://wiki.archlinux.org/index.php/Fonts>`_
-- `Font configuration <https://wiki.archlinux.org/index.php/Font_configuration>`_
+- `Font configuration
+  <https://wiki.archlinux.org/index.php/Font_configuration>`_
 - `Metric-compatible fonts
   <https://wiki.archlinux.org/index.php/Metric-compatible_fonts>`_
 - `Microsoft fonts
