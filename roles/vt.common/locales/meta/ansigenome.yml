@@ -1,0 +1,4 @@
+---
+ansigenome_info:
+  synopsis: |
+    Generates `system locales <https://wiki.archlinux.org/index.php/Locale>`_.

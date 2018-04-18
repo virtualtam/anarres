@@ -1,6 +1,1 @@
 ---
-ansigenome_info:
-  synopsis: |
-    Deploys and enables
-    `virtualtam/dotfiles <https://github.com/virtualtam/dotfiles>`_
-    for all selected users.

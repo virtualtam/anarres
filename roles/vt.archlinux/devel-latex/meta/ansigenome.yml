@@ -1,0 +1,4 @@
+---
+ansigenome_info:
+  synopsis: |
+    Installs the `TeX Live <https://tug.org/texlive/>`_ LaTeX distribution.

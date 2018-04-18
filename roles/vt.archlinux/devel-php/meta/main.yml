@@ -2,5 +2,3 @@
 dependencies:
   - vt.archlinux/devel-base
   - vt.archlinux/devel-javascript
-ansigenome_info:
-  synopsis: Installs PHP development libraries and tools.
