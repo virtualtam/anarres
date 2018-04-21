@@ -53,6 +53,13 @@ List of default variables available in the inventory:
     # Logs
     makepkg_logdest: "{{ makepkg_dir }}/logs"
 
+    # Platform - used by GCC to select the appropriate toolchain
+    #
+    # See:
+    # - https://bbs.archlinux.org/viewtopic.php?id=112331
+    # - https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/x86-Options.html
+    makepkg_platform: pc-linux-gnu
+
 
 
 
