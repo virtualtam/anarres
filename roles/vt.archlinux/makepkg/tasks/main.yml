@@ -35,4 +35,3 @@
     group: "{{ makepkg_user_group }}"
     mode: 0600
     backup: yes
-

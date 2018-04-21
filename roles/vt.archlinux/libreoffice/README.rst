@@ -26,7 +26,7 @@ List of default variables available in the inventory:
 
     # LibreOffice languages
     libreoffice_languages:
-      - en-GB
+      - en-gb
       - fr
 
 

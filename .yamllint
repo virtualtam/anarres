@@ -5,4 +5,6 @@ ignore: |
   .tox/
 
 rules:
+  line-length:
+    ignore: ansigenome.yml
   truthy: disable

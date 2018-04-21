@@ -1,5 +1,5 @@
 ---
 ansigenome_info:
-  - synopsis: |
-      Deploys user-specific `makepkg <https://wiki.archlinux.org/index.php/Makepkg>`_
-      configuration
+  synopsis: |
+    Deploys user-specific `makepkg <https://wiki.archlinux.org/index.php/Makepkg>`_
+    configuration
