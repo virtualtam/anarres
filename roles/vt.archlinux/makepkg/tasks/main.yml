@@ -1,4 +1,26 @@
 ---
+- name: Install compilation and compression utilities
+  pacman:
+    name:
+      - ccache
+      - pigz
+    state: present
+
+- name: "Create the ccache directory for {{ makepkg_user_name }}"
+  file:
+    path: "~{{ makepkg_user_name }}/.ccache"
+    state: directory
+    mode: 0755
+
+- name: "Deploy ccache configuration for {{ makepkg_user_name }}"
+  template:
+    src: ccache.conf
+    dest: "~{{ makepkg_user_name }}/.ccache/ccache.conf"
+    owner: "{{ makepkg_user_name }}"
+    group: "{{ makepkg_user_group }}"
+    mode: 0600
+    backup: yes
+
 - name: "Create the Pacman configuration directory for {{ makepkg_user_name }}"
   file:
     path: "~{{ makepkg_user_name }}/.config/pacman"
