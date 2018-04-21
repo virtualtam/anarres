@@ -1,0 +1,16 @@
+---
+- name: "Create the Pacman configuration directory for {{ makepkg_user_name }}"
+  file:
+    path: "~{{ makepkg_user_name }}/.config/pacman"
+    state: directory
+    mode: 0755
+
+- name: "Deploy makepkg configuration for {{ makepkg_user_name }}"
+  template:
+    src: makepkg.conf
+    dest: "~{{ makepkg_user_name }}/.config/pacman/"
+    owner: "{{ makepkg_user_name }}"
+    group: "{{ makepkg_user_group }}"
+    mode: 0600
+    backup: yes
+

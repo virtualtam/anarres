@@ -1,0 +1,13 @@
+---
+- hosts: archlinux
+  tasks:
+    - name: Deploy Makepkg configuration
+      include_role:
+        name: vt.archlinux/makepkg
+      vars:
+        makepkg_user_name: "{{ role_item.name }}"
+        makepkg_user_group: "{{ role_item.group }}"
+        makepkg_user_email: "{{ role_item.email }}"
+      with_items: "{{ makepkg_users }}"
+      loop_control:
+        loop_var: "role_item"

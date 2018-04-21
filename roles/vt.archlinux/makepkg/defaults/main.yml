@@ -1,0 +1,12 @@
+---
+# User account
+makepkg_user_name: johndoe
+
+# Primary group
+makepkg_user_group: nobodies
+
+# User email address
+makepkg_user_email: john@do.es
+
+# User ccache size
+ccache_max_size: 10Gi

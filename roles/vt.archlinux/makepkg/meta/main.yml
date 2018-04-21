@@ -1,0 +1,4 @@
+---
+dependencies:
+  - vt.archlinux/devel-cc
+  - vt.archlinux/pacman
