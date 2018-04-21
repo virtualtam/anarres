@@ -10,6 +10,8 @@
   file:
     path: "~{{ makepkg_user_name }}/.ccache"
     state: directory
+    owner: "{{ makepkg_user_name }}"
+    group: "{{ makepkg_user_group }}"
     mode: 0755
 
 - name: "Deploy ccache configuration for {{ makepkg_user_name }}"
@@ -25,7 +27,23 @@
   file:
     path: "~{{ makepkg_user_name }}/.config/pacman"
     state: directory
+    owner: "{{ makepkg_user_name }}"
+    group: "{{ makepkg_user_group }}"
     mode: 0755
+
+- name: "Create Makepkg output directories for {{ makepkg_user_name }}"
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: "{{ makepkg_user_name }}"
+    group: "{{ makepkg_user_group }}"
+    mode: 0755
+  with_items:
+    - "{{ makepkg_dir }}"
+    - "{{ makepkg_pkgdest }}"
+    - "{{ makepkg_srcdest }}"
+    - "{{ makepkg_srcpkgdest }}"
+    - "{{ makepkg_logdest }}"
 
 - name: "Deploy makepkg configuration for {{ makepkg_user_name }}"
   template:

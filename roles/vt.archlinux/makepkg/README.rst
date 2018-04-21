@@ -38,6 +38,21 @@ List of default variables available in the inventory:
     # User ccache size
     ccache_max_size: 10Gi
 
+    # User Makepkg directory
+    makepkg_dir: "~{{ makepkg_user_name }}/makepkg"
+
+    # Package destination
+    makepkg_pkgdest: "{{ makepkg_dir }}/packages"
+
+    # Source cache
+    makepkg_srcdest: "{{ makepkg_dir }}/sources"
+
+    # Source packages
+    makepkg_srcpkgdest: "{{ makepkg_dir }}/srcpackages"
+
+    # Logs
+    makepkg_logdest: "{{ makepkg_dir }}/logs"
+
 
 
 
