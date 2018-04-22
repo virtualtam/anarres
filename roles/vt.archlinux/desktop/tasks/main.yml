@@ -17,8 +17,8 @@
 - name: Terminal emulators and desktop utilities
   pacman:
     name:
+      - gnome-keyring
       - gpicview
-      - libgnome-keyring
       - numlockx
       - python-xdg
       - qtkeychain
