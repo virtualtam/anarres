@@ -2,7 +2,6 @@
 - name: LaTeX
   pacman:
     name:
-      - auctex
       - texlive-bin
       - texlive-core
       - texlive-fontsextra

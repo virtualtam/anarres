@@ -2,7 +2,6 @@
 - name: Text editors
   pacman:
     name:
-      - emacs-nox
       - nano
       - poedit
       - vim
