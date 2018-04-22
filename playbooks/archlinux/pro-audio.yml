@@ -1,0 +1,6 @@
+---
+- name: Pro Audio
+  hosts: archlinux
+  roles:
+    - vt.archlinux/audio-desktop
+    - vt.archlinux/audio-workstation

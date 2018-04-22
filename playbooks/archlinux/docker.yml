@@ -1,0 +1,5 @@
+---
+- name: Setup development environment
+  hosts: archlinux
+  roles:
+    - vt.archlinux/docker

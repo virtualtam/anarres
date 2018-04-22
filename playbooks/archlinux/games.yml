@@ -1,0 +1,6 @@
+---
+- name: Gaming and fluff
+  hosts: archlinux
+  roles:
+    - vt.archlinux/games
+    - vt.archlinux/lulz

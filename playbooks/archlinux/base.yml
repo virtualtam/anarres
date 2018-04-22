@@ -1,0 +1,13 @@
+---
+- hosts: archlinux
+  roles:
+    - vt.archlinux/pacman
+    - vt.archlinux/base
+    - vt.archlinux/x11
+    # - vt.common/x11-config
+    - vt.common/network-time
+    - vt.common/locales
+    - vt.archlinux/lightdm
+    - vt.archlinux/awesome-wm
+    - vt.archlinux/desktop
+    - vt.archlinux/audio-desktop

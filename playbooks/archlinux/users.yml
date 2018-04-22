@@ -1,0 +1,3 @@
+---
+- import_playbook: ../dotfiles.yml
+- import_playbook: makepkg.yml

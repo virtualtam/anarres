@@ -1,0 +1,10 @@
+---
+- name: Setup development environment
+  hosts: archlinux
+  roles:
+    - vt.archlinux/devel-arduino
+    - vt.archlinux/devel-cc
+    - vt.archlinux/devel-haskell
+    - vt.archlinux/devel-latex
+    - vt.archlinux/devel-php
+    - vt.archlinux/devel-python
