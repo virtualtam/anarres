@@ -1,11 +1,15 @@
 ---
 ansible_user: ansible
 
-dotfiles_user_nick: John Doe
-dotfiles_user_email: john@do.es
-
 dotfiles_users:
   - name: john
     group: doe
+    nick: John Doe
+    email: john@do.es
   - name: root
     group: root
+
+makepkg_users:
+  - name: john
+    group: doe
+    email: john@do.es
