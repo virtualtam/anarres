@@ -5,6 +5,9 @@ makepkg_user_name: johndoe
 # Primary group
 makepkg_user_group: nobodies
 
+# Nickname
+makepkg_user_nick: John Doe
+
 # User email address
 makepkg_user_email: john@do.es
 

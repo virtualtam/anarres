@@ -12,4 +12,5 @@ dotfiles_users:
 makepkg_users:
   - name: john
     group: doe
+    nick: John Doe
     email: john@do.es

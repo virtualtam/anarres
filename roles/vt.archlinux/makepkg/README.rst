@@ -32,6 +32,9 @@ List of default variables available in the inventory:
     # Primary group
     makepkg_user_group: nobodies
 
+    # Nickname
+    makepkg_user_nick: John Doe
+
     # User email address
     makepkg_user_email: john@do.es
 
