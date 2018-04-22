@@ -1,24 +1,23 @@
 ---
 - name: Install system utilities
   pacman:
-    name: "{{ item }}"
+    name:
+      - acpi
+      - dmidecode
+      - dstat
+      - glances
+      - gparted
+      - gptfdisk
+      - haveged
+      - htop
+      - iftop
+      - iotop
+      - lsof
+      - lshw
+      - namcap
+      - os-prober
+      - pkgfile
+      - smartmontools
+      - strace
+      - testdisk
     state: present
-  with_items:
-    - acpi
-    - dmidecode
-    - dstat
-    - glances
-    - gparted
-    - gptfdisk
-    - haveged
-    - htop
-    - iftop
-    - iotop
-    - lsof
-    - lshw
-    - namcap
-    - os-prober
-    - pkgfile
-    - smartmontools
-    - strace
-    - testdisk

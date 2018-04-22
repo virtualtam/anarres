@@ -1,9 +1,8 @@
 ---
 - name: Install IM clients
   pacman:
-    name: "{{ item }}"
+    name:
+      - mcabber
+      - mumble
+      - teamspeak3
     state: present
-  with_items:
-    - mcabber
-    - mumble
-    - teamspeak3

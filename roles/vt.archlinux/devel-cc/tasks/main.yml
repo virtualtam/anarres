@@ -1,18 +1,17 @@
 ---
 - name: Install C & C++ libraries
   pacman:
-    name: "{{ item }}"
+    name:
+      - boost
+      - boost-libs
+      - ccache
+      - check
+      - clang
+      - cmake
+      - extra-cmake-modules
+      - doxygen
+      - gperf
+      - scons
+      - uncrustify
+      - valgrind
     state: present
-  with_items:
-    - boost
-    - boost-libs
-    - ccache
-    - check
-    - clang
-    - cmake
-    - extra-cmake-modules
-    - doxygen
-    - gperf
-    - scons
-    - uncrustify
-    - valgrind

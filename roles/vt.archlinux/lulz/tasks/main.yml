@@ -1,16 +1,17 @@
 ---
 - name: Installz teh pkgz fur teh lulz!
-  pacman: name={{ item }} state=present
-  with_items:
-    - asciiquarium
-    - banner
-    - cmatrix
-    - cowsay
-    - doge
-    - figlet
-    - fortune-mod
-    - lolcat
-    - nyancat
-    - ponysay
-    - sl
-    - talkfilters
+  pacman:
+    name:
+      - asciiquarium
+      - banner
+      - cmatrix
+      - cowsay
+      - doge
+      - figlet
+      - fortune-mod
+      - lolcat
+      - nyancat
+      - ponysay
+      - sl
+      - talkfilters
+    state: present

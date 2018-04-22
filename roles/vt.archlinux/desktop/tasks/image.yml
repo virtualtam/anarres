@@ -1,12 +1,11 @@
 ---
 - name: Install image manipulation software
   pacman:
-    name: "{{ item }}"
+    name:
+      - flameshot
+      - gimp
+      - gimp-plugin-gmic
+      - gmic
+      - inkscape
+      - imagemagick
     state: present
-  with_items:
-    - flameshot
-    - gimp
-    - gimp-plugin-gmic
-    - gmic
-    - inkscape
-    - imagemagick

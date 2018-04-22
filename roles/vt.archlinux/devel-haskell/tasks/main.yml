@@ -1,18 +1,16 @@
 ---
 - name: Development - Haskell
   pacman:
-    name: "{{ item }}"
+    name:
+      - cabal-install
+      - ghc
+      - ghc-static
     state: present
-  with_items:
-    - cabal-install
-    - ghc
-    - ghc-static
 
 - name: Development - Haskell libraries
   pacman:
-    name: "{{ item }}"
+    name:
+      - haskell-scientific
+      - haskell-streaming-commons
+      - haskell-websockets
     state: present
-  with_items:
-    - haskell-scientific
-    - haskell-streaming-commons
-    - haskell-websockets

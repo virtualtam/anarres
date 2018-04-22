@@ -1,15 +1,14 @@
 ---
 - name: Development - Python
   pacman:
-    name: "{{ item }}"
+    name:
+      - mpdecimal
+      - pygmentize
+      - python-pip
+      - python-pew
+      - python-pygments
+      - python-requests
+      - python-tox
+      - python-virtualenv
+      - python-virtualenv-clone
     state: present
-  with_items:
-    - mpdecimal
-    - pygmentize
-    - python-pip
-    - python-pew
-    - python-pygments
-    - python-requests
-    - python-tox
-    - python-virtualenv
-    - python-virtualenv-clone

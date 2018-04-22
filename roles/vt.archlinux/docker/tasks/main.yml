@@ -1,14 +1,13 @@
 ---
 - name: Install packages
   pacman:
-    name: "{{ item }}"
+    name:
+      - docker
+      - docker-compose
+      - python-docker
+      - python-docker-pycreds
+      - python-dockerpty
     state: present
-  with_items:
-    - docker
-    - docker-compose
-    - python-docker
-    - python-docker-pycreds
-    - python-dockerpty
 
 - name: Create systemd Docker directory
   file:

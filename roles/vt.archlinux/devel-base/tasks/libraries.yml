@@ -1,13 +1,12 @@
 ---
 - name: Install development tools
   pacman:
-    name: "{{ item }}"
+    name:
+      - asciidoc
+      - bc
+      - cloc
+      - ctags
+      - graphviz
+      - maven
+      - shellcheck
     state: present
-  with_items:
-    - asciidoc
-    - bc
-    - cloc
-    - ctags
-    - graphviz
-    - maven
-    - shellcheck

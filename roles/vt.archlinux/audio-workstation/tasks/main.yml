@@ -7,35 +7,32 @@
 
 - name: Install Jack bindings and utilities
   pacman:
-    name: "{{ item }}"
+    name:
+      - a2jmidid
+      - pulseaudio-jack
+      - qjackctl
     state: present
-  with_items:
-    - a2jmidid
-    - pulseaudio-jack
-    - qjackctl
 
 - name: Install MIDI libraries and software synths
   pacman:
-    name: "{{ item }}"
+    name:
+      - fluidsynth
+      - qsynth
+      - soundfont-fluid
+      - timidity++
+      - vmpk
     state: present
-  with_items:
-    - fluidsynth
-    - qsynth
-    - soundfont-fluid
-    - timidity++
-    - vmpk
 
 - name: Install applications
   pacman:
-    name: "{{ item }}"
+    name:
+      - ardour
+      - jalv
+      - libsamplerate
+      - lilypond
+      - lv2
+      - musescore
+      - portsmf
+      - rubberband
+      - supercollider
     state: present
-  with_items:
-    - ardour
-    - jalv
-    - libsamplerate
-    - lilypond
-    - lv2
-    - musescore
-    - portsmf
-    - rubberband
-    - supercollider

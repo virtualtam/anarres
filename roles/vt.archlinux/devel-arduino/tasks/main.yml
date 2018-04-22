@@ -1,7 +1,5 @@
 ---
 - name: Install Arduino development tools
   pacman:
-    name: "{{ item }}"
+    name: arduino
     state: present
-  with_items:
-    - arduino

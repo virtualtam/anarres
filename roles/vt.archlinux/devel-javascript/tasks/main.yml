@@ -1,8 +1,7 @@
 ---
 - name: Install Javascript libraries
   pacman:
-    name: "{{ item }}"
+    name:
+      - nodejs
+      - yarn
     state: present
-  with_items:
-    - nodejs
-    - yarn

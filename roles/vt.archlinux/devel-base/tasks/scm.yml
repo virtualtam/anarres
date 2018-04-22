@@ -1,11 +1,10 @@
 ---
 - name: Install SCM tools
   pacman:
-    name: "{{ item }}"
+    name:
+      - cvs
+      - git
+      - gource
+      - mercurial
+      - subversion
     state: present
-  with_items:
-    - cvs
-    - git
-    - gource
-    - mercurial
-    - subversion

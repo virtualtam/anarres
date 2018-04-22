@@ -16,34 +16,32 @@
 
 - name: Terminal emulators and desktop utilities
   pacman:
-    name: "{{ item }}"
+    name:
+      - gpicview
+      - libgnome-keyring
+      - numlockx
+      - python-xdg
+      - qtkeychain
+      - redshift
+      - rxvt-unicode
+      - rxvt-unicode-terminfo
+      - scrot
+      - termite
+      - termite-terminfo
     state: present
-  with_items:
-    - gpicview
-    - libgnome-keyring
-    - numlockx
-    - python-xdg
-    - qtkeychain
-    - redshift
-    - rxvt-unicode
-    - rxvt-unicode-terminfo
-    - scrot
-    - termite
-    - termite-terminfo
 
 - name: PCManFM and file utilities
   pacman:
-    name: "{{ item }}"
+    name:
+      - ffmpegthumbnailer
+      - gvfs
+      - gvfs-gphoto2
+      - imagemagick
+      - libgsf
+      - pcmanfm
+      - xarchiver
+      - udiskie
     state: present
-  with_items:
-    - ffmpegthumbnailer
-    - gvfs
-    - gvfs-gphoto2
-    - imagemagick
-    - libgsf
-    - pcmanfm
-    - xarchiver
-    - udiskie
 
 - name: Add an ImageMagick PDF thumbnailer
   copy:

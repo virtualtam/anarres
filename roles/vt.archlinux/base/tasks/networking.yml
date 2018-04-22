@@ -1,21 +1,20 @@
 ---
 - name: Install networking utilities
   pacman:
-    name: "{{ item }}"
+    name:
+      - bind-tools
+      - bridge-utils
+      - curl
+      - ifplugd
+      - iperf
+      - iperf3
+      - iptraf-ng
+      - net-tools
+      - nmap
+      - openbsd-netcat
+      - radare2
+      - tcpdump
+      - traceroute
+      - whois
+      - wget
     state: present
-  with_items:
-    - bind-tools
-    - bridge-utils
-    - curl
-    - ifplugd
-    - iperf
-    - iperf3
-    - iptraf-ng
-    - net-tools
-    - nmap
-    - openbsd-netcat
-    - radare2
-    - tcpdump
-    - traceroute
-    - whois
-    - wget

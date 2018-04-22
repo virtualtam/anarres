@@ -1,16 +1,15 @@
 ---
 - name: AwesomeWM Desktop and graphical toolkits
   pacman:
-    name: "{{ item }}"
+    name:
+      - arc-gtk-theme
+      - awesome
+      - breeze-icons
+      - fltk
+      - gtk-engine-murrine
+      - lxappearance
+      - numix-gtk-theme
+      - qt5-styleplugins
+      - qt5ct
+      - tk
     state: present
-  with_items:
-    - arc-gtk-theme
-    - awesome
-    - breeze-icons
-    - fltk
-    - gtk-engine-murrine
-    - lxappearance
-    - numix-gtk-theme
-    - qt5-styleplugins
-    - qt5ct
-    - tk

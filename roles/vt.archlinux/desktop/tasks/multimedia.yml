@@ -1,58 +1,52 @@
 ---
 - name: Install A/V libraries
   pacman:
-    name: "{{ item }}"
+    name:
+      - ffmpeg
+      - gstreamer
     state: present
-  with_items:
-    - ffmpeg
-    - gstreamer
 
 - name: Install dictionaries
   pacman:
-    name: "{{ item }}"
+    name:
+      - aspell
+      - aspell-en
+      - aspell-fr
+      - hunspell
+      - hunspell-fr
+      - hunspell-en
     state: present
-  with_items:
-    - aspell
-    - aspell-en
-    - aspell-fr
-    - hunspell
-    - hunspell-fr
-    - hunspell-en
 
 - name: Install eBook and PDF readers
   pacman:
-    name: "{{ item }}"
+    name:
+      - pdfpc
+      - zathura
+      - zathura-cb
+      - zathura-djvu
+      - zathura-pdf-poppler
+      - zathura-ps
     state: present
-  with_items:
-    - pdfpc
-    - zathura
-    - zathura-cb
-    - zathura-djvu
-    - zathura-pdf-poppler
-    - zathura-ps
 
 - name: Install Web browsers
   pacman:
-    name: "{{ item }}"
+    name:
+      - chromium
+      - firefox
+      - flashplugin
     state: present
-  with_items:
-    - chromium
-    - firefox
-    - flashplugin
 
 - name: Install x86 libraries (multilib)
   pacman:
-    name: "{{ item }}"
+    name:
+      - lib32-flashplugin
     state: present
-  with_items:
-    - lib32-flashplugin
   when: "'multilib' in pacman_repositories"
 
 - name: Install media players
   pacman:
-    name: "{{ item }}"
+    name:
+      - moc
+      - mpv
+      - smplayer
     state: present
-  with_items:
-    - moc
-    - mpv
-    - smplayer

@@ -1,14 +1,13 @@
 ---
 - name: Install LightDM
   pacman:
-    name: "{{ item }}"
+    name:
+      - accountsservice
+      - lightdm
+      - lightdm-gtk-greeter
+      - lightdm-gtk-greeter-settings
+      - light-locker
     state: present
-  with_items:
-    - accountsservice
-    - lightdm
-    - lightdm-gtk-greeter
-    - lightdm-gtk-greeter-settings
-    - light-locker
 
 - name: Define user accounts hidden from LightDM
   lineinfile:

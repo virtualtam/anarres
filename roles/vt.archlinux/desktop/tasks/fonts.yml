@@ -1,15 +1,14 @@
 ---
 - name: Install fonts
   pacman:
-    name: "{{ item }}"
+    name:
+      - noto-fonts
+      - ttf-bitstream-vera
+      - ttf-dejavu
+      - ttf-droid
+      - ttf-freefont
+      - ttf-hack
+      - ttf-inconsolata
+      - ttf-liberation
+      - ttf-ubuntu-font-family
     state: present
-  with_items:
-    - noto-fonts
-    - ttf-bitstream-vera
-    - ttf-dejavu
-    - ttf-droid
-    - ttf-freefont
-    - ttf-hack
-    - ttf-inconsolata
-    - ttf-liberation
-    - ttf-ubuntu-font-family

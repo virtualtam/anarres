@@ -1,13 +1,12 @@
 ---
 - name: Install LXC packages and distribution-specific utilities
   pacman:
-    name: "{{ item }}"
+    name:
+      - arch-install-scripts
+      - bridge-utils
+      - debootstrap
+      - lxc
     state: present
-  with_items:
-    - arch-install-scripts
-    - bridge-utils
-    - debootstrap
-    - lxc
 
 - name: Disable container start at boot
   lineinfile:

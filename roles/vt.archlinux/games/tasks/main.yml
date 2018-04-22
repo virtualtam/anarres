@@ -1,24 +1,20 @@
 ---
 - name: Install emulators
   pacman:
-    name: "{{ item }}"
+    name:
+      - dolphin-emu
+      - mupen64plus
+      - vbam-wx
     state: present
-  with_items:
-    - dolphin-emu
-    - mupen64plus
-    - vbam-wx
 
 - name: Install games
   pacman:
-    name: "{{ item }}"
+    name:
+      - minetest
+      - nethack
     state: present
-  with_items:
-    - minetest
-    - nethack
 
 - name: Install Steam
   pacman:
-    name: "{{ item }}"
+    name: steam
     state: present
-  with_items:
-    - steam
