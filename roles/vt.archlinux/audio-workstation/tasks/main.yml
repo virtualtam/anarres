@@ -5,12 +5,16 @@
     state: present
     force: yes
 
-- name: Install Jack bindings and utilities
+- name: Install Jack bindings, clients and utilities
   pacman:
     name:
       - a2jmidid
+      - cadence
+      - jack_capture
       - pulseaudio-jack
       - qjackctl
+      - rtirq
+      - zita-ajbridge
     state: present
 
 - name: Install MIDI libraries and software synths
@@ -18,6 +22,7 @@
     name:
       - fluidsynth
       - qsynth
+      - rtmidi
       - soundfont-fluid
       - timidity++
       - vmpk
@@ -27,6 +32,7 @@
   pacman:
     name:
       - ardour
+      - audacity
       - jalv
       - libsamplerate
       - lilypond
