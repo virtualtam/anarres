@@ -15,6 +15,7 @@
       - lsof
       - lshw
       - namcap
+      - ncdu
       - os-prober
       - pkgfile
       - smartmontools

@@ -6,13 +6,16 @@
       - bridge-utils
       - curl
       - ifplugd
+      - ipcalc
       - iperf
       - iperf3
       - iptraf-ng
+      - ipv6calc
       - net-tools
       - nmap
       - openbsd-netcat
       - radare2
+      - sipcalc
       - tcpdump
       - traceroute
       - whois
