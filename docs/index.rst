@@ -77,4 +77,4 @@ Vagrant boxes
 .. toctree::
    :maxdepth: 1
 
-   vagrant/archlinux-dev/README
+   vagrant/archlinux/README
