@@ -1,5 +1,5 @@
-vagrant/archlinux-dev
-=====================
+vagrant/archlinux
+=================
 
 An Arch Linux development environment featuring:
 
