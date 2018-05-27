@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-18.04"
+  config.vm.hostname = "bionic"
+  # config.vm.network :private_network, type: "dhcp"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "bionic"
+    vb.memory = 4096
+    vb.cpus = 4
+
+    vb.customize ["modifyvm", :id, "--vram", 64]
+    vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+    vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
+    vb.customize ['modifyvm', :id, '--draganddrop', 'bidirectional']
+  end
+
+  config.vm.provision "file", source: "../../roles", destination: "/vagrant/roles"
+
+  config.vm.provision "shell",
+    inline: "sudo mkdir -p /tmp/vagrant-ansible ] ; sudo chown -R vagrant:vagrant /tmp/vagrant-ansible"
+
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
+end

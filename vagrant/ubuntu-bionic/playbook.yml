@@ -1,0 +1,44 @@
+---
+- name: Ubuntu Bionic Beaver - Development VM
+  hosts: all
+  remote_user: vagrant
+  become: yes
+  become_user: root
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+
+    xkb_layout: fr
+
+    dotfiles_users:
+      - name: root
+        group: root
+        git_editor: vim
+      - name: virtualtam
+        group: virtualtam
+        git_editor: vim
+
+
+  roles:
+    - vt.common/x11-config
+    - vt.common/network-time
+    - vt.common/locales
+
+  pre_tasks:
+    - name: Refresh package cache and upgrade system
+      apt:
+        cache_valid_time: 3600
+        update_cache: yes
+        upgrade: yes
+
+  tasks:
+    - name: Deploy dotfiles
+      include_role:
+        name: vt.common/dotfiles
+      vars:
+        dotfiles_user_name: "{{ role_item.name }}"
+        dotfiles_user_group: "{{ role_item.group }}"
+        dotfiles_user_git_editor: "{{ role_item.git_editor }}"
+      with_items: "{{ dotfiles_users }}"
+      loop_control:
+        loop_var: "role_item"

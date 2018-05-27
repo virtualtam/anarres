@@ -78,3 +78,4 @@ Vagrant boxes
    :maxdepth: 1
 
    vagrant/archlinux/README
+   vagrant/ubuntu-bionic/README
