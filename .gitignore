@@ -8,5 +8,8 @@ secret.yml
 
 *.retry
 
+vagrant/**/roles/
+.vagrant/
+
 docs/_build/
 .tox/
