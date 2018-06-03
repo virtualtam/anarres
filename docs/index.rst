@@ -71,6 +71,17 @@ Roles
    roles/vt.archlinux/pacman/README
    roles/vt.archlinux/x11/README
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Debian/Ubuntu roles:
+
+   roles/vt.debian/awesome-wm/README
+   roles/vt.debian/base/README
+   roles/vt.debian/lightdm/README
+   roles/vt.debian/x11/README
+
+
 Vagrant boxes
 -------------
 
