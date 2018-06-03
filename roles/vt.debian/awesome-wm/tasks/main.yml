@@ -1,0 +1,17 @@
+---
+- name: AwesomeWM Desktop and graphical toolkits
+  apt:
+    name:
+      - arc-theme
+      - awesome
+      - breeze-cursor-theme
+      - breeze-gtk-theme
+      - breeze-icon-theme
+      - gtk2-engines-murrine
+      - lxappearance
+      - numix-gtk-theme
+      - numix-icon-theme
+      - qt5-style-plugins
+      - qt5ct
+      - tk
+    state: present

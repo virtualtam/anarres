@@ -1,0 +1,9 @@
+---
+- name: Install X.Org packages
+  apt:
+    name:
+      - arandr
+      - xserver-xorg
+      - xserver-xorg-input-evdev
+      - x11-xserver-utils  # provides xrandr, xrdb
+    state: present
