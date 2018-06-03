@@ -20,9 +20,13 @@
 
 
   roles:
+    - vt.debian/base
+    - vt.debian/x11
     - vt.common/x11-config
     - vt.common/network-time
     - vt.common/locales
+    - vt.debian/lightdm
+    - vt.debian/awesome-wm
 
   pre_tasks:
     - name: Refresh package cache and upgrade system

@@ -3,18 +3,43 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-18.04"
+  config.vm.boot_timeout = 3000
   config.vm.hostname = "bionic"
   # config.vm.network :private_network, type: "dhcp"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "bionic"
+	# Display the VirtualBox GUI when booting the machine
+    vb.gui = true
+
+    # Name to display in Virtualbox
+	vb.name = "bionic"
+
+	# Customize the amount of memory on the VM
     vb.memory = 4096
+
+	# Customize CPU count
     vb.cpus = 4
 
+	# Configure VM resources and capacities
     vb.customize ["modifyvm", :id, "--vram", 64]
     vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
-    vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
-    vb.customize ['modifyvm', :id, '--draganddrop', 'bidirectional']
+    vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
+    vb.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
+	
+    # Ensure the NAT interface link is up
+    vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
+
+    # Ensure VirtualBox Remote Desktop (VRDE) is off
+    vb.customize ["modifyvm", :id, "--vrde", "off"]
+
+    # Add empty optical drive
+    vb.customize [
+      "storageattach", :id,
+      "--storagectl", "IDE Controller",
+      "--port", "0", "--device", "1",
+      "--type", "dvddrive",
+      "--medium", "emptydrive"
+    ]
   end
 
   config.vm.provision "file", source: "../../roles", destination: "/vagrant/roles"
