@@ -1,0 +1,20 @@
+---
+- name: Install system utilities
+  apt:
+    name:
+      - acpi
+      - dmidecode
+      - dstat
+      - gdisk
+      - glances
+      - gparted
+      - htop
+      - iotop
+      - lsof
+      - lshw
+      - ncdu
+      - os-prober
+      - smartmontools
+      - strace
+      - testdisk
+    state: present

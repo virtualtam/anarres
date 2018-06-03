@@ -1,0 +1,24 @@
+---
+- name: Install networking utilities
+  apt:
+    name:
+      - apt-transport-https
+      - bridge-utils
+      - curl
+      - dnsutils
+      - ifplugd
+      - iftop
+      - iotop
+      - ipcalc
+      - iperf
+      - iperf3
+      - ipv6calc
+      - net-tools
+      - netcat-openbsd
+      - nmap
+      - sipcalc
+      - tcpdump
+      - traceroute
+      - wget
+      - whois
+    state: present
