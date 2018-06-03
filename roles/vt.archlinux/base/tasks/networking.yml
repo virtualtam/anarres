@@ -6,6 +6,8 @@
       - bridge-utils
       - curl
       - ifplugd
+      - iftop
+      - iotop
       - ipcalc
       - iperf
       - iperf3
