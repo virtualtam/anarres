@@ -19,6 +19,7 @@
     name:
       - gnome-keyring
       - gpicview
+      - keepassxc
       - numlockx
       - python-xdg
       - qtkeychain
