@@ -34,6 +34,7 @@
       - chromium
       - firefox
       - flashplugin
+      - geckodriver
     state: present
 
 - name: Install x86 libraries (multilib)
