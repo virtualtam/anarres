@@ -23,8 +23,6 @@
       - python-xdg
       - qtkeychain
       - redshift
-      - rxvt-unicode
-      - rxvt-unicode-terminfo
       - scrot
       - termite
       - termite-terminfo
