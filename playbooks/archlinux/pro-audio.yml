@@ -4,3 +4,4 @@
   roles:
     - vt.archlinux/audio-desktop
     - vt.archlinux/audio-workstation
+    - vt.archlinux/purr-data

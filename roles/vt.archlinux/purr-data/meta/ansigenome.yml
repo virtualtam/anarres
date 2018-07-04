@@ -1,0 +1,10 @@
+---
+ansigenome_info:
+  synopsis: |
+    Configures Purr Data repositories and installs audio packages.
+
+    See:
+
+    - `Purr Data <https://agraef.github.io/purr-data/>`_
+    - `Arch Package Repository <https://bitbucket.org/l2orkaur/l2orkaur.bitbucket.org>`_
+    - `Repository <https://git.purrdata.net/jwilkes/purr-data>`_

@@ -1,0 +1,15 @@
+---
+- name: Deploy Pacman repository configuration
+  copy:
+    src: purr-data.conf
+    dest: /etc/pacman.conf.d/purr-data.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Install Purr Data
+  pacman:
+    name: purr-data
+    state: present
+    update_cache: yes

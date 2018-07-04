@@ -1,0 +1,4 @@
+---
+dependencies:
+  - vt.archlinux/pacman
+  - vt.archlinux/audio-workstation
