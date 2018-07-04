@@ -4,5 +4,6 @@
     name:
       - mcabber
       - mumble
+      - profanity
       - teamspeak3
     state: present
