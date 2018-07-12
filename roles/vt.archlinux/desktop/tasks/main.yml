@@ -35,6 +35,7 @@
       - ffmpegthumbnailer
       - gvfs
       - gvfs-gphoto2
+      - gvfs-mtp
       - imagemagick
       - libgsf
       - pcmanfm
