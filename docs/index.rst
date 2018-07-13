@@ -79,6 +79,7 @@ Roles
 
    roles/vt.debian/awesome-wm/README
    roles/vt.debian/base/README
+   roles/vt.debian/docker/README
    roles/vt.debian/lightdm/README
    roles/vt.debian/x11/README
    roles/vt.ubuntu/devel-base/README

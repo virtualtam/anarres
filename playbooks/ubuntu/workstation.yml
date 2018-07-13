@@ -9,6 +9,7 @@
     - vt.common/locales
     # - vt.debian/lightdm
     - vt.debian/awesome-wm
+    - vt.debian/docker
     - vt.ubuntu/devel-cc
     - vt.ubuntu/devel-python
 
