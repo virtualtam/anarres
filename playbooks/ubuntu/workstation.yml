@@ -11,6 +11,7 @@
     - vt.debian/awesome-wm
     - vt.debian/docker
     - vt.ubuntu/devel-cc
+    - vt.ubuntu/devel-nodejs
     - vt.ubuntu/devel-python
 
   pre_tasks:
