@@ -3,6 +3,7 @@ extends: default
 
 ignore: |
   .tox/
+  roles/community
 
 rules:
   line-length:
