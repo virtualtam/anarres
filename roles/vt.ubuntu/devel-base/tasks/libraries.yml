@@ -1,0 +1,10 @@
+---
+- name: Install development tools
+  apt:
+    name:
+      - asciidoc
+      - bc
+      - cloc
+      - exuberant-ctags
+      - graphviz
+    state: present

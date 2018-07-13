@@ -1,0 +1,8 @@
+---
+- name: Install SCM tools
+  apt:
+    name:
+      - git
+      - gource
+      - mercurial
+    state: present

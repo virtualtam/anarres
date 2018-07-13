@@ -81,6 +81,9 @@ Roles
    roles/vt.debian/base/README
    roles/vt.debian/lightdm/README
    roles/vt.debian/x11/README
+   roles/vt.ubuntu/devel-base/README
+   roles/vt.ubuntu/devel-cc/README
+   roles/vt.ubuntu/devel-python/README
 
 
 Vagrant boxes

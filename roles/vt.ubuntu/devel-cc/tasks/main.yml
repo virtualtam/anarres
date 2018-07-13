@@ -1,0 +1,16 @@
+---
+- name: Install C & C++ libraries
+  apt:
+    name:
+      - ccache
+      - check
+      - clang
+      - cmake
+      - extra-cmake-modules
+      - doxygen
+      - gperf
+      - libboost-dev
+      - scons
+      - uncrustify
+      - valgrind
+    state: present

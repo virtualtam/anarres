@@ -9,6 +9,8 @@
     - vt.common/locales
     # - vt.debian/lightdm
     - vt.debian/awesome-wm
+    - vt.ubuntu/devel-cc
+    - vt.ubuntu/devel-python
 
   pre_tasks:
     - name: Refresh package cache and upgrade system

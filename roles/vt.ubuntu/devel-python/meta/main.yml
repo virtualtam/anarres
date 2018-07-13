@@ -1,0 +1,4 @@
+---
+dependencies:
+  - vt.ubuntu/devel-base
+  - vt.ubuntu/devel-cc
