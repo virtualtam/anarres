@@ -5,6 +5,7 @@
       - bind-tools
       - bridge-utils
       - curl
+      - httpie
       - ifplugd
       - iftop
       - iotop
