@@ -5,12 +5,17 @@
       - arch-wiki-docs
       - arch-wiki-lite
       - bash-completion
+      - colordiff
+      - dfc
       - dialog
+      - diff
+      - fzf
       - gnupg
       - jq
       - lynx
       - multitail
       - ncurses
+      - parallel
       - p7zip
       - pigz
       - pinentry
