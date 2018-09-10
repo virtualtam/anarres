@@ -10,7 +10,10 @@
       - cmake
       - extra-cmake-modules
       - doxygen
+      - gdb
       - gperf
+      - meson
+      - ninja
       - scons
       - uncrustify
       - valgrind
