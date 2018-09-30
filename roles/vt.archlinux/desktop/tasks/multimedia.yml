@@ -14,7 +14,8 @@
       - aspell-fr
       - hunspell
       - hunspell-fr
-      - hunspell-en
+      - hunspell-en_GB
+      - hunspell-en_US
     state: present
 
 - name: Install eBook and PDF readers

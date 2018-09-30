@@ -8,7 +8,8 @@
       - colordiff
       - dfc
       - dialog
-      - diff
+      - diffutils
+      - exa
       - fzf
       - gnupg
       - jq
