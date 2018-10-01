@@ -1,0 +1,8 @@
+---
+- name: Install virtualization packages
+  pacman:
+    name:
+      - libvirt
+      - vagrant
+      - virtualbox
+      - virtualbox-host-modules-arch

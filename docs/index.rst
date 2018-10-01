@@ -70,6 +70,7 @@ Roles
    roles/vt.archlinux/makepkg/README
    roles/vt.archlinux/pacman/README
    roles/vt.archlinux/purr-data/README
+   roles/vt.archlinux/virtualization/README
    roles/vt.archlinux/x11/README
 
 

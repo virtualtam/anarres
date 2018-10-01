@@ -1,0 +1,5 @@
+---
+- name: Install virtualization utilities
+  hosts: archlinux
+  roles:
+    - vt.archlinux/virtualization
