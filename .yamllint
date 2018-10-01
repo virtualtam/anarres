@@ -6,6 +6,5 @@ ignore: |
   roles/community
 
 rules:
-  line-length:
-    ignore: ansigenome.yml
+  line-length: disable
   truthy: disable
