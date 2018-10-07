@@ -15,6 +15,7 @@
       - qjackctl
       - rtirq
       - zita-ajbridge
+      - zita-convolver
     state: present
 
 - name: Install MIDI libraries and software synths

@@ -10,5 +10,6 @@
       - ttf-hack
       - ttf-inconsolata
       - ttf-liberation
+      - ttf-roboto
       - ttf-ubuntu-font-family
     state: present
