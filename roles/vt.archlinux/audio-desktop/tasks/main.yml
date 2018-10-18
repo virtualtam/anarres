@@ -8,15 +8,20 @@
       - pulseaudio
     state: present
 
-- name: Install codecs
+- name: Install codecs and tools
   pacman:
     name:
+      - cuetools
       - fftw
       - flac
       - libcue
       - libffado
       - libmpcdec
+      - mac
+      - mp3info
       - opus
+      - shntool
       - twolame
+      - vorbis-tools
       - wavpack
     state: present
