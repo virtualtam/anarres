@@ -6,5 +6,5 @@ libreoffice_version: fresh
 
 # LibreOffice languages
 libreoffice_languages:
-  - en-gb
-  - fr
+  - "libreoffice-{{ libreoffice_version }}-en-gb"
+  - "libreoffice-{{ libreoffice_version }}-fr"

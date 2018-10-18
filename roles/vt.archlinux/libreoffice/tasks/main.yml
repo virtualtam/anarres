@@ -6,6 +6,5 @@
 
 - name: Install LibreOffice localizations
   pacman:
-    name: "libreoffice-{{ libreoffice_version }}-{{ item }}"
+    name: "{{ libreoffice_languages }}"
     state: present
-  with_items: "{{ libreoffice_languages }}"
