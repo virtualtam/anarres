@@ -1,13 +1,32 @@
 ---
 - hosts: archlinux
   roles:
-    - vt.archlinux/pacman
-    - vt.archlinux/base
-    - vt.archlinux/x11
-    # - vt.common/x11-config
-    - vt.common/network-time
-    - vt.common/locales
-    - vt.archlinux/lightdm
-    - vt.archlinux/awesome-wm
-    - vt.archlinux/desktop
-    - vt.archlinux/audio-desktop
+    - role: vt.archlinux/pacman
+      tags: ['pacman']
+
+    - role: vt.archlinux/base
+      tags: ['base']
+
+    - role: vt.archlinux/x11
+      tags: ['x11']
+
+    #- role: vt.common/x11-config
+    #  tags: ['x11']
+
+    - role: vt.common/network-time
+      tags: ['ntp']
+
+    - role: vt.common/locales
+      tags: ['locales']
+
+    - role: vt.archlinux/lightdm
+      tags: ['lightdm']
+
+    - role: vt.archlinux/awesome-wm
+      tags: ['desktop', 'awesome']
+
+    - role: vt.archlinux/desktop
+      tags: ['desktop', 'office']
+
+    - role: vt.archlinux/audio-desktop
+      tags: ['audio']
