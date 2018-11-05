@@ -56,3 +56,9 @@
     group: root
     mode: 0644
     backup: yes
+
+- name: Device configuration utilities
+  pacman:
+    name:
+      - libratbag
+      - piper
