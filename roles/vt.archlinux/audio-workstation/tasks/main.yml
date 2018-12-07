@@ -22,6 +22,7 @@
   pacman:
     name:
       - fluidsynth
+      - qmidiarp
       - qsynth
       - rtmidi
       - soundfont-fluid
