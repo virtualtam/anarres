@@ -63,6 +63,7 @@ Roles
    roles/vt.archlinux/devel-python/README
    roles/vt.archlinux/docker/README
    roles/vt.archlinux/games/README
+   roles/vt.archlinux/i3-wm/README
    roles/vt.archlinux/libreoffice/README
    roles/vt.archlinux/lightdm/README
    roles/vt.archlinux/lulz/README

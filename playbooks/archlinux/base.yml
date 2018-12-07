@@ -10,8 +10,8 @@
     - role: vt.archlinux/x11
       tags: ['x11']
 
-    #- role: vt.common/x11-config
-    #  tags: ['x11']
+    # - role: vt.common/x11-config
+    #   tags: ['x11']
 
     - role: vt.common/network-time
       tags: ['ntp']
