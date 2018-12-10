@@ -5,6 +5,7 @@
       - arc-gtk-theme
       - breeze-icons
       - dmenu
+      - feh
       - fltk
       - gtk-engine-murrine
       - i3-wm
