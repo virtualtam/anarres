@@ -14,13 +14,16 @@
       - iperf3
       - iptraf-ng
       - ipv6calc
+      - libimobiledevice
       - net-tools
       - nmap
       - openbsd-netcat
+      - openvpn
       - radare2
       - sipcalc
       - tcpdump
       - traceroute
+      - usbmuxd
       - whois
       - wget
     state: present
