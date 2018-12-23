@@ -45,6 +45,10 @@
   with_items:
     - src: "awesome{{ dotfiles_awesome_version }}"
       dest: awesome
+    - src: i3
+      dest: i3
+    - src: i3status
+      dest: i3status
     - src: termite
       dest: termite
     - src: zathura
