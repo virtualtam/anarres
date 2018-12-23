@@ -22,8 +22,8 @@
     - role: vt.archlinux/lightdm
       tags: ['lightdm']
 
-    - role: vt.archlinux/awesome-wm
-      tags: ['desktop', 'awesome']
+    - role: vt.archlinux/i3-wm
+      tags: ['desktop', 'i3']
 
     - role: vt.archlinux/desktop
       tags: ['desktop', 'office']
