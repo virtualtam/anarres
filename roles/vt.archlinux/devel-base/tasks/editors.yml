@@ -4,6 +4,7 @@
     name:
       - nano
       - poedit
+      - speedcrunch
       - vim
       - wireshark-cli
       - wireshark-qt
