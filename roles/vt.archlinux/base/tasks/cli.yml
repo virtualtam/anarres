@@ -15,6 +15,7 @@
       - jq
       - lynx
       - multitail
+      - neofetch
       - ncurses
       - parallel
       - p7zip

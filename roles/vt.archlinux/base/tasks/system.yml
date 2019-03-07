@@ -5,6 +5,7 @@
       - acpi
       - dmidecode
       - dstat
+      - exfat-utils
       - glances
       - gparted
       - gptfdisk
@@ -20,5 +21,6 @@
       - pkgfile
       - smartmontools
       - strace
+      - sysstat
       - testdisk
     state: present
