@@ -1,0 +1,7 @@
+---
+- name: Install Rust libraries
+  pacman:
+    name:
+      - rust
+      - rustup
+    state: present

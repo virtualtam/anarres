@@ -61,6 +61,7 @@ Roles
    roles/vt.archlinux/devel-latex/README
    roles/vt.archlinux/devel-php/README
    roles/vt.archlinux/devel-python/README
+   roles/vt.archlinux/devel-rust/README
    roles/vt.archlinux/docker/README
    roles/vt.archlinux/games/README
    roles/vt.archlinux/i3-wm/README
