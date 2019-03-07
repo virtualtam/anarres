@@ -5,4 +5,6 @@
       - nano
       - poedit
       - vim
+      - wireshark-cli
+      - wireshark-qt
     state: present

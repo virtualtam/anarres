@@ -51,4 +51,5 @@
       - moc
       - mpv
       - smplayer
+      - vlc
     state: present
