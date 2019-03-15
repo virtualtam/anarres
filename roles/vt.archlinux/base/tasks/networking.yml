@@ -5,6 +5,7 @@
       - bind-tools
       - bridge-utils
       - curl
+      - hping
       - httpie
       - ifplugd
       - iftop
@@ -15,10 +16,12 @@
       - iptraf-ng
       - ipv6calc
       - libimobiledevice
+      - mtr
       - net-tools
       - nmap
       - openbsd-netcat
       - openvpn
+      - p0f
       - radare2
       - sipcalc
       - tcpdump
