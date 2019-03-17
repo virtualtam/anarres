@@ -52,6 +52,7 @@ Roles
    roles/vt.archlinux/audio-workstation/README
    roles/vt.archlinux/awesome-wm/README
    roles/vt.archlinux/base/README
+   roles/vt.archlinux/bluetooth/README
    roles/vt.archlinux/desktop/README
    roles/vt.archlinux/devel-arduino/README
    roles/vt.archlinux/devel-base/README

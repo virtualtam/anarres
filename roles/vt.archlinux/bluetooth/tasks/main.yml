@@ -1,0 +1,13 @@
+---
+- name: Install Bluetooth packages
+  pacman:
+    name:
+      - blueberry
+      - bluez
+      - bluez-utils
+
+- name: Ensure the bluetooth service is enabled and started
+  systemd:
+    name: bluetooth
+    enabled: yes
+    state: started

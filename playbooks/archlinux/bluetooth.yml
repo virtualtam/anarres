@@ -1,0 +1,5 @@
+---
+- name: Setup Bluetooth
+  hosts: archlinux
+  roles:
+    - vt.archlinux/bluetooth
