@@ -12,6 +12,7 @@
       - exa
       - fzf
       - gnupg
+      - inotify-tools
       - jq
       - lynx
       - multitail

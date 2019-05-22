@@ -36,6 +36,7 @@
       - gvfs
       - gvfs-gphoto2
       - gvfs-mtp
+      - gvfs-smb
       - imagemagick
       - libgsf
       - raw-thumbnailer
@@ -62,3 +63,4 @@
     name:
       - libratbag
       - piper
+    state: present
