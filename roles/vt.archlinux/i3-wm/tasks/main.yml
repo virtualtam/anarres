@@ -2,6 +2,7 @@
 - name: AwesomeWM Desktop and graphical toolkits
   pacman:
     name:
+      - adapta-gtk-theme
       - arc-gtk-theme
       - breeze-icons
       - dmenu
