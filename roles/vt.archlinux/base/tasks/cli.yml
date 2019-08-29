@@ -4,6 +4,7 @@
     name:
       - arch-wiki-docs
       - arch-wiki-lite
+      - at
       - bash-completion
       - colordiff
       - dfc
