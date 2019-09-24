@@ -51,14 +51,6 @@ List of default variables available in the inventory:
     # Location of the local cloned repository
     dotfiles_git_dest: "~{{ dotfiles_user_name }}/.dots"
 
-    # Deprecated: emacs modes
-    dotfiles_emacs_modes:
-      - modes
-      - modes-ide
-      - modes-audio
-      - modes-devops
-      - modes-extra
-
 
 
 

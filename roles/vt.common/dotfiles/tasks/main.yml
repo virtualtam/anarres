@@ -78,15 +78,6 @@
     - src: zsh/rc.sh
       dest: .zshrc
 
-- name: "[{{ dotfiles_user_name }}] Deploy initial Emacs configuration"
-  template:
-    src: emacs.el
-    dest: "~{{ dotfiles_user_name }}/.emacs"
-    owner: "{{ dotfiles_user_name }}"
-    group: "{{ dotfiles_user_group }}"
-    force: no
-    mode: 0644
-
 - name: "[{{ dotfiles_user_name }}] Deploy Git configuration"
   template:
     src: gitconfig
