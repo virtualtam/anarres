@@ -1,0 +1,6 @@
+---
+# 204 - Lines should be no longer than 160 chars
+# 701 - No 'galaxy_info' found
+skip_list:
+  - '204'
+  - '701'
