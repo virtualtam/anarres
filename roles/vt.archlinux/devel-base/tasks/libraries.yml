@@ -9,4 +9,5 @@
       - graphviz
       - maven
       - shellcheck
+      - xdot
     state: present
