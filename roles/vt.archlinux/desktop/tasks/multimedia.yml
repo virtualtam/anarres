@@ -38,13 +38,6 @@
       - geckodriver
     state: present
 
-- name: Install x86 libraries (multilib)
-  pacman:
-    name:
-      - lib32-flashplugin
-    state: present
-  when: "'multilib' in pacman_repositories"
-
 - name: Install media players
   pacman:
     name:

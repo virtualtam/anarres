@@ -1,5 +1,5 @@
 ---
-- name: AwesomeWM Desktop and graphical toolkits
+- name: Install the i3 window manager and graphical toolkits
   pacman:
     name:
       - adapta-gtk-theme
@@ -13,7 +13,6 @@
       - i3lock
       - i3status
       - lxappearance
-      - numix-gtk-theme
       - qt5-styleplugins
       - qt5ct
       - tk

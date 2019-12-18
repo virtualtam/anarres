@@ -1,5 +1,5 @@
 ---
-- name: Text editors
+- name: Install text editors
   pacman:
     name:
       - nano

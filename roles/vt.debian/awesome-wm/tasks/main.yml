@@ -9,8 +9,6 @@
       - breeze-icon-theme
       - gtk2-engines-murrine
       - lxappearance
-      - numix-gtk-theme
-      - numix-icon-theme
       - qt5-style-plugins
       - qt5ct
       - tk
