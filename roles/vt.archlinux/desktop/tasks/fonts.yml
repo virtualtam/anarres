@@ -2,11 +2,11 @@
 - name: Install fonts
   pacman:
     name:
+      - gnu-free-fonts
       - noto-fonts
       - ttf-bitstream-vera
       - ttf-dejavu
       - ttf-droid
-      - ttf-freefont
       - ttf-hack
       - ttf-inconsolata
       - ttf-liberation
