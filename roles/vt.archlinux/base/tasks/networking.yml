@@ -24,6 +24,7 @@
       - p0f
       - radare2
       - sipcalc
+      - socat
       - tcpdump
       - traceroute
       - usbmuxd

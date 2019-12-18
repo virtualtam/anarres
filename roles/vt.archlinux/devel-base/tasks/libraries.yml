@@ -2,6 +2,7 @@
 - name: Install development tools
   pacman:
     name:
+      - ant
       - asciidoc
       - bc
       - cloc
