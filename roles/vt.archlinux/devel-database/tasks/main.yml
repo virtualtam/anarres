@@ -1,0 +1,9 @@
+---
+- name: Install database clients and development tools
+  pacman:
+    name:
+      - mariadb-clients
+      - percona-toolkit
+      - postgresql-libs
+      - redis
+    state: present

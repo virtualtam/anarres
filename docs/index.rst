@@ -57,6 +57,7 @@ Roles
    roles/vt.archlinux/devel-arduino/README
    roles/vt.archlinux/devel-base/README
    roles/vt.archlinux/devel-cc/README
+   roles/vt.archlinux/devel-database/README
    roles/vt.archlinux/devel-haskell/README
    roles/vt.archlinux/devel-javascript/README
    roles/vt.archlinux/devel-latex/README

@@ -11,6 +11,7 @@
       - dialog
       - diffutils
       - exa
+      - fd
       - fzf
       - gnupg
       - inotify-tools

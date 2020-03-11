@@ -10,5 +10,6 @@
       - graphviz
       - maven
       - shellcheck
+      - tokei
       - xdot
     state: present
