@@ -8,7 +8,11 @@
       - jack_capture
       - pulseaudio-jack
       - qjackctl
+      - realtime-privileges
+      - rt-tests
       - rtirq
+      - schedtool
+      - tuna
       - zita-ajbridge
       - zita-convolver
     state: present
