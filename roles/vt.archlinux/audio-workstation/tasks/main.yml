@@ -1,15 +1,10 @@
 ---
-- name: Install (force) Jack2 audio server
-  pacman:
-    name: jack2-dbus
-    state: present
-    force: yes
-
 - name: Install Jack bindings, clients and utilities
   pacman:
     name:
       - a2jmidid
       - cadence
+      - jack2
       - jack_capture
       - pulseaudio-jack
       - qjackctl
