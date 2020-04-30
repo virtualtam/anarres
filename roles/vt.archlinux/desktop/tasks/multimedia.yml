@@ -21,11 +21,13 @@
 - name: Install eBook and PDF readers
   pacman:
     name:
+      - mupdf
+      - mupdf-tools
       - pdfpc
       - zathura
       - zathura-cb
       - zathura-djvu
-      - zathura-pdf-poppler
+      - zathura-pdf-mupdf
       - zathura-ps
     state: present
 
