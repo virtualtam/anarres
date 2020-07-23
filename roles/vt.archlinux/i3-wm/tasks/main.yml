@@ -3,7 +3,6 @@
   pacman:
     name:
       - adapta-gtk-theme
-      - arc-gtk-theme
       - breeze-icons
       - dmenu
       - feh
@@ -12,6 +11,7 @@
       - i3-wm
       - i3lock
       - i3status
+      - kvantum-qt5
       - lxappearance
       - qt5-styleplugins
       - qt5ct
