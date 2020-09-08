@@ -19,7 +19,7 @@
   pacman:
     name:
       - gnome-keyring
-      - gpicview
+      - gpicview-gtk3
       - keepassxc
       - numlockx
       - python-xdg

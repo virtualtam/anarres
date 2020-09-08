@@ -6,7 +6,9 @@
       - gimp
       - gimp-plugin-gmic
       - gmic
+      - icoutils
       - inkscape
       - imagemagick
       - jpegoptim
+      - pngquant
     state: present
