@@ -43,8 +43,9 @@
 - name: Install media players
   pacman:
     name:
-      - moc
+      - mpd
       - mpv
+      - ncmpc
       - smplayer
       - vlc
     state: present
