@@ -49,6 +49,10 @@
       dest: i3
     - src: i3status
       dest: i3status
+    - src: mpd
+      dest: mpd
+    - src: ncmpc
+      dest: ncmpc
     - src: termite
       dest: termite
     - src: zathura
