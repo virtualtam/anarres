@@ -3,7 +3,7 @@
   package:
     name: "{{ item }}"
     state: present
-  with_items:
+  loop:
     - git
     - "{{ dotfiles_user_shell }}"
 
@@ -42,7 +42,7 @@
     owner: "{{ dotfiles_user_name }}"
     group: "{{ dotfiles_user_group }}"
     state: link
-  with_items:
+  loop:
     - src: "awesome{{ dotfiles_awesome_version }}"
       dest: awesome
     - src: i3
@@ -66,7 +66,7 @@
     group: "{{ dotfiles_user_group }}"
     state: link
     force: yes
-  with_items:
+  loop:
     - src: bash/rc.sh
       dest: .bashrc
     - src: bash/aliases.sh

@@ -38,7 +38,7 @@
     owner: "{{ makepkg_user_name }}"
     group: "{{ makepkg_user_group }}"
     mode: 0755
-  with_items:
+  loop:
     - "{{ makepkg_dir }}"
     - "{{ makepkg_pkgdest }}"
     - "{{ makepkg_srcdest }}"

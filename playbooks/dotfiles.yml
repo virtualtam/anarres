@@ -10,6 +10,6 @@
         dotfiles_user_nick: "{{ role_item.nick }}"
         dotfiles_user_email: "{{ role_item.email }}"
         dotfiles_user_git_editor: "{{ role_item.git_editor }}"
-      with_items: "{{ dotfiles_users }}"
+      loop: "{{ dotfiles_users }}"
       loop_control:
         loop_var: "role_item"
