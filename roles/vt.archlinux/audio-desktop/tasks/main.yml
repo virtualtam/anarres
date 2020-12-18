@@ -1,11 +1,14 @@
 ---
-- name: Install ALSA and PulseAudio
+- name: Install ALSA and Pipewire
   pacman:
     name:
       - alsa-plugins
       - alsa-utils
       - pavucontrol
-      - pulseaudio
+      - pipewire
+      - pipewire-alsa
+      - pipewire-jack
+      - pipewire-pulse
     state: present
 
 - name: Install codecs and tools

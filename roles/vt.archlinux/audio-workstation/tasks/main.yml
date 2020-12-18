@@ -6,7 +6,6 @@
       - cadence
       - jack2
       - jack_capture
-      - pulseaudio-jack
       - qjackctl
       - realtime-privileges
       - rt-tests
