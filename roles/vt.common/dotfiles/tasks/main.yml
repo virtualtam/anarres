@@ -23,7 +23,7 @@
     repo: "{{ dotfiles_git_repo }}"
     dest: "{{ dotfiles_git_dest }}"
     remote: origin
-    version: master
+    version: "{{ dotfiles_git_branch }}"
   become: yes
   become_user: "{{ dotfiles_user_name }}"
 

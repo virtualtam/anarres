@@ -25,5 +25,8 @@ dotfiles_awesome_version: 4
 # Remote dotfiles repository
 dotfiles_git_repo: 'https://github.com/virtualtam/dotfiles.git'
 
+# Repository branch
+dotfiles_git_branch: main
+
 # Location of the local cloned repository
 dotfiles_git_dest: "~{{ dotfiles_user_name }}/.dots"
