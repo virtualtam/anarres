@@ -26,6 +26,7 @@
       - qtkeychain
       - redshift
       - scrot
+      - seahorse
       - termite
       - termite-terminfo
     state: present
