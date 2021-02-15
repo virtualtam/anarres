@@ -45,6 +45,7 @@
       - mpd
       - mpv
       - ncmpc
+      - ncmpcpp
       - smplayer
       - vlc
     state: present

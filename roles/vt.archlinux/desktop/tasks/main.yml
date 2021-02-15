@@ -41,6 +41,7 @@
       - gvfs-smb
       - imagemagick
       - libgsf
+      - nextcloud-client
       - raw-thumbnailer
       - thunar
       - thunar-archive-plugin
