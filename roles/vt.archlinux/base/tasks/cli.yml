@@ -17,6 +17,7 @@
       - inotify-tools
       - jq
       - lynx
+      - man-db
       - multitail
       - neofetch
       - ncurses
