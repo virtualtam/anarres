@@ -36,7 +36,6 @@
     name:
       - chromium
       - firefox
-      - flashplugin
       - geckodriver
     state: present
 

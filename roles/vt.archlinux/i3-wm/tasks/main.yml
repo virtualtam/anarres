@@ -13,7 +13,6 @@
       - i3status
       - kvantum-qt5
       - lxappearance
-      - qt5-styleplugins
       - qt5ct
       - tk
     state: present

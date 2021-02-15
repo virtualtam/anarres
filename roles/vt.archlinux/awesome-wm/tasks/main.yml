@@ -8,7 +8,6 @@
       - fltk
       - gtk-engine-murrine
       - lxappearance
-      - qt5-styleplugins
       - qt5ct
       - tk
     state: present
