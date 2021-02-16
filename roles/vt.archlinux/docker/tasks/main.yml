@@ -27,3 +27,10 @@
     backup: yes
   notify:
     - reload systemd daemons and restart docker
+
+- name: Ensure Docker is enabled and started
+  systemd:
+    name: docker
+    enabled: yes
+    state: started
+    daemon_reload: yes

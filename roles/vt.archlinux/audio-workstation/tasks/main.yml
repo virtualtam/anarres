@@ -44,3 +44,9 @@
       - rubberband
       - supercollider
     state: present
+
+- name: Ensure rtirq is enabled and started
+  systemd:
+    name: rtirq
+    enabled: yes
+    state: started
