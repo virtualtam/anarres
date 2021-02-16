@@ -1,0 +1,11 @@
+---
+- name: Deploy user limit configuration
+  template:
+    src: limits.conf
+    dest: /etc/security/limits.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  notify:
+    - warn about ulimit changes

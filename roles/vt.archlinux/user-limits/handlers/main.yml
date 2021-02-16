@@ -1,0 +1,4 @@
+---
+- name: warn about ulimit changes
+  ansible.builtin.debug:
+    msg: User limits have been changed, a system restart is required for the changes to be effective

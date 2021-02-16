@@ -1,0 +1,37 @@
+---
+# User limits
+#
+# On Linux, these limits are enforced for user sessions by the PAM ulimits
+# module.
+#
+# See man pages for:
+# - limits.conf (5)
+# - ulimit (1p)
+#
+# Example usage:
+#
+# ulimits:
+#   - comment: Set the maximum number of open files for each domain.
+#     domain: "*"
+#     type: soft
+#     item: nofile
+#     value: 1024
+#
+#   - comment: Set the maximum number of open files for each domain.
+#     domain: "*"
+#     type: hard
+#     item: nofile
+#     value: 1024
+#
+#   - comment: Set the maximum number of open files for the root user.
+#     domain: "root"
+#     type: soft
+#     item: nofile
+#     value: 1024
+#
+#   - comment: Set the maximum number of open files for the root user.
+#     domain: "root"
+#     type: hard
+#     item: nofile
+#     value: 1024
+ulimits: []
