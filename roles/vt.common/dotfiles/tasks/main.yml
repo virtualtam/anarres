@@ -7,17 +7,6 @@
     - git
     - "{{ dotfiles_user_shell }}"
 
-- name: "[{{ dotfiles_user_name }}] Create group"
-  group:
-    name: "{{ dotfiles_user_group }}"
-    state: present
-
-- name: "[{{ dotfiles_user_name }}] Create user"
-  user:
-    name: "{{ dotfiles_user_name }}"
-    group: "{{ dotfiles_user_group }}"
-    shell: "/bin/{{ dotfiles_user_shell }}"
-
 - name: "[{{ dotfiles_user_name }}] Clone dotfiles repository"
   git:
     repo: "{{ dotfiles_git_repo }}"
