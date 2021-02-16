@@ -1,6 +1,17 @@
 ---
 - hosts: all
   tasks:
+    - name: Create users
+      include_role:
+        name: vt.common/user
+      vars:
+        user_name: "{{ role_item.name }}"
+        user_group: "{{ role_item.group }}"
+        user_groups: "{{ role_item.groups }}"
+      loop: "{{ users }}"
+      loop_control:
+        loop_var: "role_item"
+
     - name: Deploy dotfiles
       include_role:
         name: vt.common/dotfiles

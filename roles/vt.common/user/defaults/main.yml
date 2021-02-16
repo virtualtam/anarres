@@ -1,0 +1,12 @@
+---
+# User account
+user_name: johndoe
+
+# Primary group
+user_group: nobodies
+
+# Secondary groups
+user_groups: []
+
+# Shell
+user_shell: zsh

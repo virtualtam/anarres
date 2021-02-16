@@ -1,0 +1,19 @@
+---
+- name: "[{{ user_name }}] Install dependencies"
+  package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - "{{ user_shell }}"
+
+- name: "[{{ user_name }}] Create primary group"
+  group:
+    name: "{{ user_group }}"
+    state: present
+
+- name: "[{{ user_name }}] Create user"
+  user:
+    name: "{{ user_name }}"
+    group: "{{ user_group }}"
+    groups: "{{ user_groups }}"
+    shell: "/bin/{{ user_shell }}"
