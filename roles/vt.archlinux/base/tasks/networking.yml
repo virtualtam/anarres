@@ -9,12 +9,14 @@
       - httpie
       - ifplugd
       - iftop
+      - inetutils
       - iotop
       - ipcalc
       - iperf
       - iperf3
       - iptraf-ng
       - ipv6calc
+      - ldns
       - libimobiledevice
       - mtr
       - net-tools
