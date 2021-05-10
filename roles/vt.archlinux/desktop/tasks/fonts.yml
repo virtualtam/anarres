@@ -3,6 +3,7 @@
   pacman:
     name:
       - gnu-free-fonts
+      - libertinus-font
       - noto-fonts
       - noto-fonts-emoji
       - ttf-bitstream-vera
