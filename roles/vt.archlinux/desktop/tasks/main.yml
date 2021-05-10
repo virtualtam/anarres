@@ -18,6 +18,7 @@
 - name: Terminal emulators and desktop utilities
   pacman:
     name:
+      - alacritty
       - gnome-keyring
       - gpicview-gtk3
       - keepassxc
