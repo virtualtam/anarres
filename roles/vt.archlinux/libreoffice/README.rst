@@ -1,14 +1,6 @@
 vt.archlinux/libreoffice
 ========================
 
-
-
-
-
-
-
-
-
 Role variables
 ~~~~~~~~~~~~~~
 
@@ -26,8 +18,3 @@ List of default variables available in the inventory:
     libreoffice_languages:
       - "libreoffice-{{ libreoffice_version }}-en-gb"
       - "libreoffice-{{ libreoffice_version }}-fr"
-
-
-
-
-

@@ -1,20 +1,14 @@
 vt.archlinux/makepkg
 ====================
 
-
-
-
-
 Deploys user-specific `makepkg <https://wiki.archlinux.org/index.php/Makepkg>`_
 configuration
-
 
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
 - :doc:`/roles/vt.archlinux/devel-cc/README`
 - :doc:`/roles/vt.archlinux/pacman/README`
-
 
 Role variables
 ~~~~~~~~~~~~~~
@@ -60,8 +54,3 @@ List of default variables available in the inventory:
     # - https://bbs.archlinux.org/viewtopic.php?id=112331
     # - https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/x86-Options.html
     makepkg_platform: pc-linux-gnu
-
-
-
-
-

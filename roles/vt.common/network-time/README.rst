@@ -1,10 +1,6 @@
 vt.common/network-time
 ======================
 
-
-
-
-
 Sets the host timezone and enables `NTP <http://www.ntp.org/>`_.
 
 Note: NTP is not enabled for virtualized guests, as the system clock
@@ -22,9 +18,6 @@ See:
 - `Ubuntu inside virtual machine: ntpd or ntpdate or ???
   to avoid clock drift
   <https://askubuntu.com/questions/280421/ubuntu-inside-virtual-machine-ntpd-or-ntpdate-or-to-avoid-clock-drift>`_
-
-
-
 
 Role variables
 ~~~~~~~~~~~~~~
@@ -49,8 +42,3 @@ List of default variables available in the inventory:
       - ntp.ubuntu.org
       - 0.pool.ntp.org
       - 1.pool.ntp.org
-
-
-
-
-

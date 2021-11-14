@@ -1,10 +1,6 @@
 vt.archlinux/desktop
 ====================
 
-
-
-
-
 Installs desktop, office and multimedia applications, as well as a decent
 collection of fonts for office and development usage.
 
@@ -25,12 +21,10 @@ Threads:
 - `What font packages do you usually install?
   <https://www.reddit.com/r/archlinux/comments/2diqx8/what_font_packages_do_you_usually_install/>`_
 
-
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
 - :doc:`/roles/vt.archlinux/pacman/README`
-
 
 Role variables
 ~~~~~~~~~~~~~~
@@ -51,8 +45,3 @@ List of default variables available in the inventory:
 
     # Install Instant Messaging clients?
     desktop_install_messaging: no
-
-
-
-
-

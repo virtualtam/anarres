@@ -14,7 +14,6 @@ An Ubuntu Bionic Beaver development environment featuring:
 
 - dotfiles
 
-
 Roles
 -----
 

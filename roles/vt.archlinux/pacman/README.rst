@@ -1,10 +1,6 @@
 vt.archlinux/pacman
 ===================
 
-
-
-
-
 Configures Pacman repositories, with the possibility to add custom
 repositories under ``/etc/pacman.conf.d/<some_repo>.conf``.
 
@@ -19,9 +15,6 @@ See:
   <https://wiki.archlinux.org/index.php/Official_repositories>`_
 - `Unofficial user repositories
   <https://wiki.archlinux.org/index.php/Unofficial_user_repositories>`_
-
-
-
 
 Role variables
 ~~~~~~~~~~~~~~
@@ -45,8 +38,3 @@ List of default variables available in the inventory:
       - core
       - extra
       - community
-
-
-
-
-

@@ -1,10 +1,6 @@
 vt.archlinux/base
 =================
 
-
-
-
-
 Installs command-line utilities and management tools for system, filesystem
 and networking tasks.
 
@@ -18,9 +14,3 @@ the following articles:
 For a list of modern alternative to usual UNIX tools, see:
 
 - `ibraheemdev/modern-unix <https://github.com/ibraheemdev/modern-unix>`_
-
-
-
-
-
-

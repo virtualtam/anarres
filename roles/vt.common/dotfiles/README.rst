@@ -1,16 +1,9 @@
 vt.common/dotfiles
 ==================
 
-
-
-
-
 Deploys and enables
 `virtualtam/dotfiles <https://github.com/virtualtam/dotfiles>`_
 for all selected users.
-
-
-
 
 Role variables
 ~~~~~~~~~~~~~~
@@ -48,8 +41,3 @@ List of default variables available in the inventory:
 
     # Location of the local cloned repository
     dotfiles_git_dest: "~{{ dotfiles_user_name }}/.dots"
-
-
-
-
-

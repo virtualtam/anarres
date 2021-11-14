@@ -1,15 +1,8 @@
 vt.debian/docker
 ================
 
-
-
-
-
 Installs `Docker <http://docker.com/>`_ and
 `Compose <https://docs.docker.com/compose/>`_.
-
-
-
 
 Role variables
 ~~~~~~~~~~~~~~
@@ -54,8 +47,3 @@ List of default variables available in the inventory:
     # - https://askubuntu.com/q/652556
     # - https://chjdev.com/2016/06/08/docker-ufw/
     docker_use_iptables: yes
-
-
-
-
-

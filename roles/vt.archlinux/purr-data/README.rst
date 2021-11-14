@@ -1,10 +1,6 @@
 vt.archlinux/purr-data
 ======================
 
-
-
-
-
 Configures Purr Data repositories and installs audio packages.
 
 See:
@@ -13,15 +9,8 @@ See:
 - `Arch Package Repository <https://bitbucket.org/l2orkaur/l2orkaur.bitbucket.org>`_
 - `Repository <https://git.purrdata.net/jwilkes/purr-data>`_
 
-
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
 - :doc:`/roles/vt.archlinux/pacman/README`
 - :doc:`/roles/vt.archlinux/audio-workstation/README`
-
-
-
-
-
-

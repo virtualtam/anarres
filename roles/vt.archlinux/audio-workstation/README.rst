@@ -1,10 +1,6 @@
 vt.archlinux/audio-workstation
 ==============================
 
-
-
-
-
 Installs Pro Audio  and music production software:
 
 - `JACK2 <http://www.jackaudio.org/>`_ server, bridges and utilities
@@ -13,14 +9,7 @@ Installs Pro Audio  and music production software:
 - MIDI players and soundfonts
 - Software synthesizers
 
-
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
 - :doc:`/roles/vt.archlinux/audio-desktop/README`
-
-
-
-
-
-

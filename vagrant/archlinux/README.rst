@@ -14,7 +14,6 @@ An Arch Linux development environment featuring:
   - ...
 - dotfiles
 
-
 Roles
 -----
 

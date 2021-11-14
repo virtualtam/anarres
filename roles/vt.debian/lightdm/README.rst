@@ -1,10 +1,6 @@
 vt.debian/lightdm
 =================
 
-
-
-
-
 Installs the `LightDM <https://freedesktop.org/wiki/Software/LightDM/>`_
 display manager and greeter, see:
 
@@ -13,11 +9,3 @@ display manager and greeter, see:
 - `lightdm-gtk-greeter-settings
   <https://launchpad.net/lightdm-gtk-greeter-settings>`_
 - `light-locker <https://github.com/the-cavalry/light-locker>`_
-
-
-
-
-
-
-
-
