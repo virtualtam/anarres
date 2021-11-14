@@ -28,6 +28,7 @@
       - sipcalc
       - socat
       - tcpdump
+      - testssl
       - traceroute
       - usbmuxd
       - whois

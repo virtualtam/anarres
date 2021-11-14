@@ -17,7 +17,9 @@ the following articles:
 - `Every Linux networking tool I know <https://wizardzines.com/networking-tools-poster/>`_
 - `Nmap 6 Cookbook <https://nmapcookbook.blogspot.com/2010/02/nmap-cheat-sheet.html>`_
 
+For a list of modern alternative to usual UNIX tools, see:
 
+- `ibraheemdev/modern-unix <https://github.com/ibraheemdev/modern-unix>`_
 
 
 

@@ -4,6 +4,7 @@
     name:
       - arch-wiki-docs
       - arch-wiki-lite
+      - asciinema
       - at
       - bash-completion
       - colordiff
