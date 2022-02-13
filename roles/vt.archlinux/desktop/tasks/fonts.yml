@@ -10,6 +10,9 @@
       - ttf-bitstream-vera
       - ttf-dejavu
       - ttf-droid
+      - ttf-fira-code
+      - ttf-fira-mono
+      - ttf-fira-sans
       - ttf-hack
       - ttf-inconsolata
       - ttf-liberation
