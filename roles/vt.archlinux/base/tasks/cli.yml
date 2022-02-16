@@ -19,6 +19,7 @@
       - jq
       - lynx
       - man-db
+      - man-pages
       - multitail
       - neofetch
       - ncurses
