@@ -2,6 +2,7 @@
 - name: Install networking utilities
   pacman:
     name:
+      - bandwhich
       - bind-tools
       - bridge-utils
       - curl
@@ -25,7 +26,6 @@
       - openbsd-netcat
       - openvpn
       - p0f
-      - radare2
       - sipcalc
       - socat
       - tcpdump

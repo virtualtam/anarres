@@ -9,6 +9,7 @@
       - ctags
       - graphviz
       - maven
+      - radare2
       - shellcheck
       - tokei
       - xdot
