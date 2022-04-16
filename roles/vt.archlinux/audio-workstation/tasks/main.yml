@@ -20,12 +20,14 @@
   pacman:
     name:
       - fluidsynth
+      - helm-synth
       - qmidiarp
       - qsynth
       - rtmidi
       - soundfont-fluid
       - timidity++
       - vmpk
+      - zynaddsubfx
     state: present
 
 - name: Install applications
