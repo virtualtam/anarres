@@ -38,6 +38,7 @@
     - i3status
     - mpd
     - ncmpc
+    - rofi
     - zathura
 
 - name: "[{{ dotfiles_user_name }}] Deploy symlinks under ~/"

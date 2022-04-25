@@ -4,7 +4,6 @@
     name:
       - adapta-gtk-theme
       - breeze-icons
-      - dmenu
       - dunst
       - feh
       - fltk
@@ -15,5 +14,6 @@
       - kvantum-qt5
       - lxappearance
       - qt5ct
+      - rofi
       - tk
     state: present
