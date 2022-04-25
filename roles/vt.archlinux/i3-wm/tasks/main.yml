@@ -5,6 +5,7 @@
       - adapta-gtk-theme
       - breeze-icons
       - dmenu
+      - dunst
       - feh
       - fltk
       - gtk-engine-murrine

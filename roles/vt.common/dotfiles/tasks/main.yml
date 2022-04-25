@@ -26,26 +26,19 @@
 
 - name: "[{{ dotfiles_user_name }}] Deploy symlinks under ~/.config"
   file:
-    src: "{{ dotfiles_git_dest }}/config/{{ item.src }}"
-    dest: "~{{ dotfiles_user_name }}/.config/{{ item.dest }}"
+    src: "{{ dotfiles_git_dest }}/config/{{ item }}"
+    dest: "~{{ dotfiles_user_name }}/.config/{{ item }}"
     owner: "{{ dotfiles_user_name }}"
     group: "{{ dotfiles_user_group }}"
     state: link
   loop:
-    - src: "awesome{{ dotfiles_awesome_version }}"
-      dest: awesome
-    - src: i3
-      dest: i3
-    - src: i3status
-      dest: i3status
-    - src: mpd
-      dest: mpd
-    - src: ncmpc
-      dest: ncmpc
-    - src: termite
-      dest: termite
-    - src: zathura
-      dest: zathura
+    - alacritty
+    - dunst
+    - i3
+    - i3status
+    - mpd
+    - ncmpc
+    - zathura
 
 - name: "[{{ dotfiles_user_name }}] Deploy symlinks under ~/"
   file:
