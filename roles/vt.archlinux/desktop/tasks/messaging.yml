@@ -2,8 +2,6 @@
 - name: Install IM clients
   pacman:
     name:
-      - mcabber
-      - mumble
-      - profanity
-      - teamspeak3
+      - discord
+      - signal-desktop
     state: present

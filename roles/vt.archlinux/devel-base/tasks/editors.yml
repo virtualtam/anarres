@@ -2,6 +2,7 @@
 - name: Install text editors
   pacman:
     name:
+      - hexyl
       - nano
       - poedit
       - speedcrunch

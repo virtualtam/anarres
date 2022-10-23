@@ -40,7 +40,6 @@
       - gvfs-gphoto2
       - gvfs-mtp
       - gvfs-smb
-      - imagemagick
       - libgsf
       - nextcloud-client
       - raw-thumbnailer
@@ -49,8 +48,9 @@
       - thunar-media-tags-plugin
       - thunar-volman
       - tumbler
-      - xarchiver
       - udiskie
+      - udisks2
+      - xarchiver
     state: present
 
 - name: Add an ImageMagick PDF thumbnailer

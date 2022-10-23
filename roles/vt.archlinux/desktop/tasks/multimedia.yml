@@ -4,6 +4,8 @@
     name:
       - ffmpeg
       - gstreamer
+      - guvcview-qt
+      - v4l2loopback-dkms
     state: present
 
 - name: Install dictionaries
