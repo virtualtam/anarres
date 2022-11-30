@@ -11,6 +11,7 @@
       - gptfdisk
       - haveged
       - htop
+      - hyperfine
       - iftop
       - iotop
       - lsof
