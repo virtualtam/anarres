@@ -12,6 +12,7 @@
       - doxygen
       - gdb
       - gperf
+      - lldb
       - meson
       - ninja
       - scons

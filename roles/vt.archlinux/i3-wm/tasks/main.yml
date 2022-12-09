@@ -13,6 +13,7 @@
       - i3status
       - kvantum-qt5
       - lxappearance
+      - picom
       - qt5ct
       - rofi
       - tk
