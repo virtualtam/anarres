@@ -1,7 +1,10 @@
 ---
-- name: Install Rust libraries
+- name: Install Rust toolchain
   pacman:
     name:
-      - rust
+      - cargo-expand
+      - rust-analyzer
       - rustup
+      - wabt
+      - wasm-pack
     state: present
