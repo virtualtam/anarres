@@ -28,8 +28,7 @@
       - redshift
       - scrot
       - seahorse
-      - termite
-      - termite-terminfo
+      - xdg-user-dirs
     state: present
 
 - name: Thunar and file utilities
