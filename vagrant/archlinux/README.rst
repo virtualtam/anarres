@@ -4,7 +4,7 @@ vagrant/archlinux
 An Arch Linux development environment featuring:
 
 - LightDM
-- AwesomeWM
+- i3 window manager
 - Firefox and Chromium browsers
 - command-line utilities for:
 
@@ -24,6 +24,5 @@ Roles
 - :doc:`/roles/vt.common/network-time/README`
 - :doc:`/roles/vt.common/locales/README`
 - :doc:`/roles/vt.archlinux/lightdm/README`
-- :doc:`/roles/vt.archlinux/awesome-wm/README`
 - :doc:`/roles/vt.archlinux/audio-desktop/README`
 - :doc:`/roles/vt.archlinux/desktop/README`

@@ -45,7 +45,7 @@
     - vt.common/network-time
     - vt.common/locales
     - vt.archlinux/lightdm
-    - vt.archlinux/awesome-wm
+    - vt.archlinux/i3-wm
     - vt.archlinux/audio-desktop
     - vt.archlinux/desktop
 
