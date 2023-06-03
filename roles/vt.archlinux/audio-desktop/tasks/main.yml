@@ -9,6 +9,7 @@
       - pipewire-alsa
       - pipewire-jack
       - pipewire-pulse
+      - qpwgraph
     state: present
 
 - name: Install codecs and tools

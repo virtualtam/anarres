@@ -3,9 +3,17 @@
   pacman:
     name:
       - arandr
+      - libva
+      - libva-mesa-driver
+      - libva-utils
+      - mesa
+      - mesa-utils
       - xf86-input-evdev
       - xorg-server
       - xorg-xinput
       - xorg-xrdb
       - xorg-xrandr
+      - vulkan-headers
+      - vulkan-icd-loader
+      - vulkan-tools
     state: present

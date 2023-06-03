@@ -11,10 +11,12 @@
       - i3-wm
       - i3lock
       - i3status
-      - kvantum-qt5
+      - kvantum
       - lxappearance
       - picom
       - qt5ct
+      - qt6ct
+      - read-edid
       - rofi
       - tk
     state: present
