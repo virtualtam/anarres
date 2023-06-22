@@ -19,7 +19,6 @@
       - fftw
       - flac
       - libcue
-      - libffado
       - libmpcdec
       - mac
       - mp3info
