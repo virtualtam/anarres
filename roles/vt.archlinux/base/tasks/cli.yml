@@ -11,9 +11,10 @@
       - dfc
       - dialog
       - diffutils
-      - exa
+      - eza
       - fd
       - fzf
+      - fzy
       - gnupg
       - inotify-tools
       - jq
@@ -30,7 +31,6 @@
       - ranger
       - ripgrep
       - rsync
-      - the_silver_searcher
       - tmux
       - tmuxp
       - tree
@@ -38,6 +38,7 @@
       - unzip
       - xclip
       - zip
+      - zoxide
       - zsh
       - zsh-completions
     state: present

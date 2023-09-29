@@ -12,9 +12,12 @@
       - doxygen
       - gdb
       - gperf
+      - heaptrack
       - lldb
       - meson
+      - mold
       - ninja
+      - perf
       - scons
       - uncrustify
       - valgrind

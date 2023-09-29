@@ -2,12 +2,11 @@
 - name: Install text editors
   pacman:
     name:
-      - helix
       - hexyl
       - nano
+      - neovim
       - poedit
       - speedcrunch
-      - vim
       - wireshark-cli
       - wireshark-qt
     state: present

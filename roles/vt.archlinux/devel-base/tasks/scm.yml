@@ -2,9 +2,8 @@
 - name: Install SCM tools
   pacman:
     name:
-      - cvs
       - git
+      - git-lfs
       - gource
       - mercurial
-      - subversion
     state: present

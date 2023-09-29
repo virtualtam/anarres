@@ -5,6 +5,7 @@
       - ffmpeg
       - gstreamer
       - guvcview-qt
+      - speech-dispatcher
       - v4l2loopback-dkms
     state: present
 

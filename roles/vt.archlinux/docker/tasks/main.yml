@@ -3,6 +3,7 @@
   pacman:
     name:
       - docker
+      - docker-buildx
       - docker-compose
       - python-docker
       - python-docker-pycreds

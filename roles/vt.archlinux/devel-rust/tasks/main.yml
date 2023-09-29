@@ -2,9 +2,11 @@
 - name: Install Rust toolchain
   pacman:
     name:
+      - cargo-bloat
       - cargo-expand
       - rust-analyzer
       - rustup
+      - sccache
       - wabt
       - wasm-pack
     state: present

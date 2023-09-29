@@ -11,4 +11,7 @@
       - imagemagick
       - jpegoptim
       - pngquant
+      - tesseract
+      - tesseract-data-eng
+      - tesseract-data-fra
     state: present
