@@ -7,6 +7,7 @@
     - vt.archlinux/devel-database
     - vt.archlinux/devel-haskell
     - vt.archlinux/devel-latex
+    - vt.archlinux/devel-lua
     - vt.archlinux/devel-php
     - vt.archlinux/devel-python
     - vt.archlinux/devel-rust

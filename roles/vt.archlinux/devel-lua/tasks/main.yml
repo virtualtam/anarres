@@ -1,0 +1,7 @@
+---
+- name: Install Lua toolchain
+  pacman:
+    name:
+      - lua
+      - lua-language-server
+    state: present
