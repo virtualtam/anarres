@@ -1,8 +1,0 @@
----
-- name: Text editors
-  apt:
-    name:
-      - nano
-      - poedit
-      - vim
-    state: present

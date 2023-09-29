@@ -50,7 +50,6 @@ Roles
 
    roles/vt.archlinux/audio-desktop/README
    roles/vt.archlinux/audio-workstation/README
-   roles/vt.archlinux/awesome-wm/README
    roles/vt.archlinux/base/README
    roles/vt.archlinux/bluetooth/README
    roles/vt.archlinux/desktop/README
@@ -61,6 +60,7 @@ Roles
    roles/vt.archlinux/devel-haskell/README
    roles/vt.archlinux/devel-javascript/README
    roles/vt.archlinux/devel-latex/README
+   roles/vt.archlinux/devel-lua/README
    roles/vt.archlinux/devel-php/README
    roles/vt.archlinux/devel-python/README
    roles/vt.archlinux/devel-rust/README
@@ -78,20 +78,6 @@ Roles
    roles/vt.archlinux/x11/README
 
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Debian/Ubuntu roles:
-
-   roles/vt.debian/awesome-wm/README
-   roles/vt.debian/base/README
-   roles/vt.debian/docker/README
-   roles/vt.debian/lightdm/README
-   roles/vt.debian/x11/README
-   roles/vt.ubuntu/devel-base/README
-   roles/vt.ubuntu/devel-cc/README
-   roles/vt.ubuntu/devel-nodejs/README
-   roles/vt.ubuntu/devel-python/README
-
 
 Vagrant boxes
 -------------
@@ -99,5 +85,4 @@ Vagrant boxes
 .. toctree::
    :maxdepth: 1
 
-   vagrant/archlinux/README
-   vagrant/ubuntu-bionic/README
+   vagrant/README

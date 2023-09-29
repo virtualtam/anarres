@@ -1,3 +1,0 @@
-[submodule "roles/community/gantsign.postman"]
-	path = roles/community/gantsign.postman
-	url = https://github.com/gantsign/ansible-role-postman.git

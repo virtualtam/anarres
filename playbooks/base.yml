@@ -1,5 +1,6 @@
 ---
-- hosts: archlinux
+- name: Setup base system
+  hosts: archlinux
   roles:
     - role: vt.archlinux/pacman
       tags: ['pacman']

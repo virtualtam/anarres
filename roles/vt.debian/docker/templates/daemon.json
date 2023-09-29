@@ -1,4 +1,0 @@
-{
-  "hosts": {{ docker_listen_hosts|to_json }},
-  "iptables": {{ docker_use_iptables|bool|to_json }}
-}

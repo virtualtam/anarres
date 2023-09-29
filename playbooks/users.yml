@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: archlinux
   tasks:
     - name: Create users
       include_role:
@@ -22,5 +22,19 @@
         dotfiles_user_email: "{{ role_item.email }}"
         dotfiles_user_git_editor: "{{ role_item.git_editor }}"
       loop: "{{ dotfiles_users }}"
+      loop_control:
+        loop_var: "role_item"
+
+- hosts: archlinux
+  tasks:
+    - name: Deploy Makepkg configuration
+      include_role:
+        name: vt.archlinux/makepkg
+      vars:
+        makepkg_user_name: "{{ role_item.name }}"
+        makepkg_user_group: "{{ role_item.group }}"
+        makepkg_user_nick: "{{ role_item.nick }}"
+        makepkg_user_email: "{{ role_item.email }}"
+      loop: "{{ makepkg_users }}"
       loop_control:
         loop_var: "role_item"
