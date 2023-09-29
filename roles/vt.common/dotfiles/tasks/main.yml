@@ -38,6 +38,7 @@
     - i3status
     - mpd
     - ncmpc
+    - nvim
     - rofi
     - zathura
 
