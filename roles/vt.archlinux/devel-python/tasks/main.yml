@@ -11,4 +11,5 @@
       - python-tox
       - python-virtualenv
       - python-virtualenv-clone
+      - ruff
     state: present
