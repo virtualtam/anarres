@@ -2,9 +2,15 @@
 - name: LaTeX
   pacman:
     name:
+      - texlive-basic
       - texlive-bin
       - texlive-core
       - texlive-fontsextra
+      - texlive-fontsrecommended
+      - texlive-langenglish
+      - texlive-langfrench
+      - texlive-latex
       - texlive-latexextra
+      - texlive-latexrecommended
       - texlive-pictures
     state: present
