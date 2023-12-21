@@ -30,6 +30,7 @@
       - pinentry
       - ranger
       - ripgrep
+      - ripgrep-all
       - rsync
       - tmux
       - tmuxp
