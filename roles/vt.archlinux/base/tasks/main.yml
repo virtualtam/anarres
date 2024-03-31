@@ -1,4 +1,5 @@
 ---
+- import_tasks: crisis.yml
 - import_tasks: cli.yml
 - import_tasks: networking.yml
 - import_tasks: system.yml

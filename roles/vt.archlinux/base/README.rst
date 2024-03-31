@@ -7,7 +7,8 @@ and networking tasks.
 To learn more about system and network performance tools, take a look at
 the following articles:
 
-- `Linux Performance <http://www.brendangregg.com/linuxperf.html>`_
+- `Linux Performance <https://www.brendangregg.com/linuxperf.html>`_
+- `Linux Crisis Tools <https://www.brendangregg.com/blog/2024-03-24/linux-crisis-tools.html>`_
 - `Every Linux networking tool I know <https://wizardzines.com/networking-tools-poster/>`_
 - `Nmap 6 Cookbook <https://nmapcookbook.blogspot.com/2010/02/nmap-cheat-sheet.html>`_
 

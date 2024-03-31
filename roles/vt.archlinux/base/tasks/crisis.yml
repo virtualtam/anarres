@@ -1,0 +1,19 @@
+---
+- name: Install Linux crisis tools
+  # https://www.brendangregg.com/blog/2024-03-24/linux-crisis-tools.html
+  pacman:
+    name:
+      - bcc
+      - bcc-tools
+      - bpftrace
+      - ethtool
+      - htop
+      - iproute2
+      - libcpuid
+      # - nicstat # Replacement: iostat, vmstat from procps-ng
+      - procps-ng
+      - sysstat
+      - tcpdump
+      # - tiptop  # Replacement: htop
+      - util-linux
+    state: present

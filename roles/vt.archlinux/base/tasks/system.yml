@@ -10,18 +10,15 @@
       - gparted
       - gptfdisk
       - haveged
-      - htop
       - hyperfine
       - iftop
       - iotop
       - lsof
       - lshw
       - namcap
-      - ncdu
       - os-prober
       - pkgfile
       - smartmontools
       - strace
-      - sysstat
       - testdisk
     state: present

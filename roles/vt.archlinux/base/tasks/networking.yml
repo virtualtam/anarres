@@ -28,7 +28,6 @@
       - p0f
       - sipcalc
       - socat
-      - tcpdump
       - testssl
       - traceroute
       - usbmuxd

@@ -23,6 +23,7 @@
       - man-pages
       - multitail
       - neofetch
+      - ncdu
       - ncurses
       - parallel
       - p7zip
