@@ -39,6 +39,8 @@
       - unrar
       - unzip
       - xclip
+      - yubikey-manager
+      - yubikey-personalization
       - zip
       - zoxide
       - zsh
