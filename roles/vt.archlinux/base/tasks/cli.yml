@@ -13,6 +13,7 @@
       - diffutils
       - eza
       - fd
+      - fish
       - fzf
       - fzy
       - gnupg
