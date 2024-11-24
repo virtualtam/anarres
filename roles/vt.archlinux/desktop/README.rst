@@ -21,27 +21,14 @@ Threads:
 - `What font packages do you usually install?
   <https://www.reddit.com/r/archlinux/comments/2diqx8/what_font_packages_do_you_usually_install/>`_
 
+
+Linux audio libraries and codecs:
+
+- `ALSA <http://www.alsa-project.org/main/index.php/Main_Page>`_
+- `Pipewire <https://www.pipewire.org/>`_
+- `CUE Splitting <https://wiki.archlinux.org/index.php/CUE_Splitting>`_
+
 Role dependencies
 ~~~~~~~~~~~~~~~~~
 
 - :doc:`/roles/vt.archlinux/pacman/README`
-
-Role variables
-~~~~~~~~~~~~~~
-
-List of default variables available in the inventory:
-
-::
-
-    ---
-    # Install email clients?
-    desktop_install_email: no
-
-    # Install extra multimedia software?
-    desktop_install_extra: no
-
-    # Install image manipulation software?
-    desktop_install_image: no
-
-    # Install Instant Messaging clients?
-    desktop_install_messaging: no

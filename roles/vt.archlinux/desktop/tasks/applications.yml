@@ -1,0 +1,45 @@
+---
+- name: Install terminal emulators and desktop utilities
+  pacman:
+    name:
+      - alacritty
+      - gnome-keyring
+      - keepassxc
+      - numlockx
+      - python-xdg
+      - qtkeychain
+      - redshift
+      - seahorse
+      - xdg-user-dirs
+    state: present
+
+- name: Install Web browsers
+  pacman:
+    name:
+      - chromium
+      - firefox
+      - geckodriver
+    state: present
+
+- name: Install eBook and PDF readers
+  pacman:
+    name:
+      - mupdf
+      - mupdf-tools
+      - pdfpc
+      - zathura
+      - zathura-cb
+      - zathura-djvu
+      - zathura-pdf-mupdf
+      - zathura-ps
+    state: present
+
+- name: Install extra multimedia software
+  pacman:
+    name:
+      - calibre
+      - espeak
+      - picard
+      - sonnet
+      - transmission-qt
+    state: present

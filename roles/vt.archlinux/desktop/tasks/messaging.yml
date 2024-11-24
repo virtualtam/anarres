@@ -1,7 +1,8 @@
 ---
-- name: Install IM clients
+- name: Install email and instant messaging clients
   pacman:
     name:
       - discord
       - signal-desktop
+      - thunderbird
     state: present

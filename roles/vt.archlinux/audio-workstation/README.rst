@@ -8,8 +8,3 @@ Installs Pro Audio  and music production software:
 - `Musescore <https://musescore.org/en>`_ notation and engraving software
 - MIDI players and soundfonts
 - Software synthesizers
-
-Role dependencies
-~~~~~~~~~~~~~~~~~
-
-- :doc:`/roles/vt.archlinux/audio-desktop/README`

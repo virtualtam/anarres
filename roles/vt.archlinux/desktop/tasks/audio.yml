@@ -28,3 +28,11 @@
       - vorbis-tools
       - wavpack
     state: present
+
+- name: Install MPD server and clients
+  pacman:
+    name:
+      - mpd
+      - ncmpc
+      - ncmpcpp
+    state: present

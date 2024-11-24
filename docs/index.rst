@@ -48,7 +48,6 @@ Roles
    :maxdepth: 1
    :caption: Arch Linux roles:
 
-   roles/vt.archlinux/audio-desktop/README
    roles/vt.archlinux/audio-workstation/README
    roles/vt.archlinux/base/README
    roles/vt.archlinux/bluetooth/README

@@ -1,0 +1,7 @@
+- name: Install video players
+  pacman:
+    name:
+      - mpv
+      - smplayer
+      - vlc
+    state: present

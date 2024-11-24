@@ -1,0 +1,37 @@
+---
+- name: Install Thunar and file management utilities
+  pacman:
+    name:
+      - ffmpegthumbnailer
+      - gvfs
+      - gvfs-gphoto2
+      - gvfs-mtp
+      - gvfs-smb
+      - libgsf
+      - nextcloud-client
+      - raw-thumbnailer
+      - thunar
+      - thunar-archive-plugin
+      - thunar-media-tags-plugin
+      - thunar-volman
+      - tumbler
+      - udiskie
+      - udisks2
+      - xarchiver
+    state: present
+
+- name: Add an ImageMagick PDF thumbnailer
+  copy:
+    src: imagemagick-pdf.thumbnailer
+    dest: /usr/share/thumbnailers/imagemagick-pdf.thumbnailer
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+
+- name: Device configuration utilities
+  pacman:
+    name:
+      - libratbag
+      - piper
+    state: present
