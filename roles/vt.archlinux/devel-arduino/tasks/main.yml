@@ -1,5 +1,8 @@
 ---
 - name: Install Arduino development tools
   pacman:
-    name: arduino
     state: present
+    name:
+      - arduino-cli
+      - arduino-ide
+      - platformio
