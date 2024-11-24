@@ -3,6 +3,7 @@
   pacman:
     name:
       - acpi
+      - bottom
       - dmidecode
       - dstat
       - exfat-utils
