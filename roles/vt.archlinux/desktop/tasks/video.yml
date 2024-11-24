@@ -1,3 +1,4 @@
+---
 - name: Install video players
   pacman:
     name:
