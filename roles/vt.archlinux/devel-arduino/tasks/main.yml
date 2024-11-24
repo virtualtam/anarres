@@ -6,3 +6,9 @@
       - arduino-cli
       - arduino-ide
       - platformio
+
+- name: Install serial communication tools
+  pacman:
+    state: present
+    name:
+      - picocom
