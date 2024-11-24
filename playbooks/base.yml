@@ -29,5 +29,12 @@
     - role: vt.archlinux/desktop
       tags: ['desktop', 'office']
 
-    - role: vt.archlinux/audio-desktop
-      tags: ['audio']
+    - role: vt.archlinux/docker
+      tags: ['container', 'docker']
+
+
+- name: Setup NVIDIA graphics
+  hosts: archlinux-nvidia
+  roles:
+    - role: vt.archlinux/nvidia
+      tags: ['docker', 'gpu', 'nvidia']

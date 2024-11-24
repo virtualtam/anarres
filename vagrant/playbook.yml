@@ -46,7 +46,6 @@
     - vt.common/locales
     - vt.archlinux/lightdm
     - vt.archlinux/i3-wm
-    - vt.archlinux/audio-desktop
     - vt.archlinux/desktop
 
   tasks:

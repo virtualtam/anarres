@@ -71,6 +71,7 @@ Roles
    roles/vt.archlinux/lulz/README
    roles/vt.archlinux/lxc/README
    roles/vt.archlinux/makepkg/README
+   roles/vt.archlinux/nvidia/README
    roles/vt.archlinux/pacman/README
    roles/vt.archlinux/purr-data/README
    roles/vt.archlinux/virtualization/README

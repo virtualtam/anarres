@@ -3,6 +3,5 @@
   hosts: archlinux
   roles:
     - vt.archlinux/user-limits
-    - vt.archlinux/audio-desktop
     - vt.archlinux/audio-workstation
     - vt.archlinux/purr-data

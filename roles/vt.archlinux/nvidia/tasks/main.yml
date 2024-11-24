@@ -1,0 +1,11 @@
+---
+- name: Install nvidia drivers, command-line and container utilities
+  pacman:
+    state: present
+    name:
+      - nvidia-container-runtime
+      - nvidia-container-toolkit
+      - nvidia-docker
+      - nvidia-open
+      - nvidia-utils
+      - nvtop
