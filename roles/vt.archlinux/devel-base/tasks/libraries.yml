@@ -10,6 +10,8 @@
       - graphviz
       - maven
       - radare2
+      - tree-sitter
+      - tree-sitter-cli
       - tokei
       - xdot
     state: present
