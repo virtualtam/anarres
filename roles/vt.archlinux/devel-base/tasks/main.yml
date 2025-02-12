@@ -1,4 +1,4 @@
 ---
-- import_tasks: libraries.yml
+- import_tasks: cli.yml
 - import_tasks: editors.yml
 - import_tasks: scm.yml

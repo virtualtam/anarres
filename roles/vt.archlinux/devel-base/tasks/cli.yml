@@ -8,6 +8,7 @@
       - cloc
       - ctags
       - graphviz
+      - just
       - maven
       - radare2
       - tree-sitter
