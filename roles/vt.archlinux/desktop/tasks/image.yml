@@ -2,14 +2,16 @@
 - name: Install image manipulation software
   pacman:
     name:
+      - feh
       - flameshot
       - gimp
       - gimp-plugin-gmic
       - gmic
       - gpicview-gtk3
       - icoutils
-      - inkscape
+      - imv
       - imagemagick
+      - inkscape
       - jpegoptim
       - pngquant
       - scrot

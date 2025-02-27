@@ -65,6 +65,7 @@ Roles
    roles/vt.archlinux/devel-rust/README
    roles/vt.archlinux/docker/README
    roles/vt.archlinux/games/README
+   roles/vt.archlinux/hyprland-wm/README
    roles/vt.archlinux/i3-wm/README
    roles/vt.archlinux/libreoffice/README
    roles/vt.archlinux/lightdm/README
@@ -74,6 +75,7 @@ Roles
    roles/vt.archlinux/nvidia/README
    roles/vt.archlinux/pacman/README
    roles/vt.archlinux/purr-data/README
+   roles/vt.archlinux/sddm/README
    roles/vt.archlinux/virtualization/README
    roles/vt.archlinux/x11/README
 

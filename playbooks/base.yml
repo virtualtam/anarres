@@ -23,8 +23,8 @@
     - role: vt.archlinux/sddm
       tags: ['desktop-manager', 'sddm', 'wayland']
 
-    - role: vt.archlinux/i3-wm
-      tags: ['desktop', 'i3']
+    - role: vt.archlinux/hyprland-wm
+      tags: ['desktop', 'hyprland', 'wayland']
 
     - role: vt.archlinux/desktop
       tags: ['desktop', 'office']

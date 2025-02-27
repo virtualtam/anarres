@@ -1,0 +1,42 @@
+---
+- name: Install Wayland packages
+  pacman:
+    name:
+      - egl-wayland
+      - grim
+      - nwg-look
+      - satty
+      - slurp
+      - wayland
+      - wlr-randr
+      - wofi
+      - xdg-desktop-portal-gtk
+    state: present
+
+- name: Install the Hyprland window manager
+  pacman:
+    name:
+      - aquamarine
+      - hyprcursor
+      - hyprland
+      - hyprlock
+      - hyprpaper
+      - uwsm
+      - waybar
+    state: present
+
+- name: Install graphical toolkits
+  pacman:
+    name:
+      - adapta-gtk-theme
+      - breeze-icons
+      - dunst
+      - fltk
+      - gtk-engine-murrine
+      - kvantum
+      - lxappearance
+      - qt5ct
+      - qt6ct
+      - read-edid
+      - tk
+    state: present
