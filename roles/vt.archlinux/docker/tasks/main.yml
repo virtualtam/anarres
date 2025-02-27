@@ -5,7 +5,6 @@
       - docker
       - docker-buildx
       - docker-compose
-      - lazydocker
       - python-docker
       - python-docker-pycreds
       - python-dockerpty

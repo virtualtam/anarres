@@ -7,7 +7,7 @@
       - gimp
       - gimp-plugin-gmic
       - gmic
-      - gpicview-gtk3
+      - gpicview
       - icoutils
       - imv
       - imagemagick

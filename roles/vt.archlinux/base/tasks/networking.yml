@@ -28,7 +28,7 @@
       - p0f
       - sipcalc
       - socat
-      - testssl
+      - testssl.sh
       - traceroute
       - usbmuxd
       - whois
