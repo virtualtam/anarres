@@ -1,6 +1,15 @@
 ---
-- name: Generate locales
+- name: Generate system locales
   locale_gen:
-    name: "{{ item }}.UTF-8"
+    name: "{{ item }}"
     state: present
-  loop: "{{ locales }}"
+  loop: "{{ locales_gen }}"
+
+- name: Configure system locales
+  template:
+    src: locale.conf
+    dest: "{{ locale_conf_path }}"
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
