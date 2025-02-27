@@ -1,0 +1,6 @@
+---
+# SDDM configuration directory
+sddm_config_dir: /etc/sddm.conf.d
+
+# SDDM theme
+sddm_theme: catpuccin-frappe

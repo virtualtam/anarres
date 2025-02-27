@@ -1,0 +1,36 @@
+---
+- name: Install SDDM
+  pacman:
+    name:
+      - accountsservice
+      - qt5-quickcontrols2
+      - qt6-declarative
+      - qt6-svg
+      - sddm
+      - weston
+    state: present
+
+- name: Create the SDDM configuration directory
+  file:
+    path: "{{ sddm_config_dir }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Deploy SDDM configuration
+  template:
+    src: "{{ item }}"
+    dest: "{{ sddm_config_dir }}/{{ item }}"
+    owner: root
+    group: root
+    mode: 0644
+  loop:
+    - 10-wayland.conf
+    - 90-theme.conf
+
+- name: Ensure SDDM is enabled and started
+  systemd:
+    name: sddm
+    enabled: yes
+    state: started

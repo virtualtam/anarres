@@ -1,0 +1,2 @@
+vt.archlinux/sddm
+=================

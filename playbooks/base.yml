@@ -20,8 +20,8 @@
     - role: vt.common/locales
       tags: ['locales']
 
-    - role: vt.archlinux/lightdm
-      tags: ['lightdm']
+    - role: vt.archlinux/sddm
+      tags: ['desktop-manager', 'sddm', 'wayland']
 
     - role: vt.archlinux/i3-wm
       tags: ['desktop', 'i3']
