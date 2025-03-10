@@ -9,5 +9,4 @@ locales_gen:
 locale_conf_path: /etc/locale.conf
 locale_conf:
   LANG: "en_US.UTF-8"
-  LC_MEASUREMENT: "metric"
   LC_TIME: "en_GB.UTF-8"
