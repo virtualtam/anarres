@@ -7,6 +7,17 @@
     group: root
     mode: 0755
 
+- name: Deploy XKB symbols
+  template:
+    src: "usr/share/X11/xkb/symbols/{{ item }}"
+    dest: "/usr/share/X11/xkb/symbols/{{ item }}"
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  loop:
+    - usaltgrweur
+
 - name: Deploy libinput configuration
   template:
     src: "etc/X11/xorg.conf.d/{{ item }}"
