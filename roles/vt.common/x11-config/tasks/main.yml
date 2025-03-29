@@ -16,4 +16,5 @@
     mode: 0644
     backup: yes
   loop:
+    - 20-libinput.conf
     - 40-keyboard.conf
