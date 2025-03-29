@@ -1,6 +1,9 @@
 ---
 # X11 keyboard layout
-xkb_layout: en
+xkb_layout: us
+
+# X11 keyboard variant
+xkb_variant: ""
 
 # X11 keyboard model
 xkb_model: pc105

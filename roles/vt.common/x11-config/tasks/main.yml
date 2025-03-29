@@ -7,20 +7,13 @@
     group: root
     mode: 0755
 
-- name: Configure keyboard options
+- name: Deploy configuration files
   template:
-    src: xorg.conf.d/20-keyboard.conf
-    dest: /etc/X11/xorg.conf.d/20-keyboard.conf
+    src: "xorg.conf.d/{{ item }}"
+    dest: "/etc/X11/xorg.conf.d/{{ item }}"
     owner: root
     group: root
     mode: 0644
     backup: yes
-
-- name: Configure virtual console options
-  template:
-    src: vconsole.conf
-    dest: /etc/vconsole.conf
-    owner: root
-    group: root
-    mode: 0644
-    backup: yes
+  loop:
+    - 40-keyboard.conf
