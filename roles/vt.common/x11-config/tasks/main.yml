@@ -7,9 +7,9 @@
     group: root
     mode: 0755
 
-- name: Deploy configuration files
+- name: Deploy libinput configuration
   template:
-    src: "xorg.conf.d/{{ item }}"
+    src: "etc/X11/xorg.conf.d/{{ item }}"
     dest: "/etc/X11/xorg.conf.d/{{ item }}"
     owner: root
     group: root
