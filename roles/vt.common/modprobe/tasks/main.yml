@@ -1,0 +1,11 @@
+---
+- name: Deploy modprobe configuration
+  template:
+    src: "modprobe.d/{{ item }}"
+    dest: "/etc/modprobe.d/{{ item }}"
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  loop:
+    - snd_usb_audio.conf

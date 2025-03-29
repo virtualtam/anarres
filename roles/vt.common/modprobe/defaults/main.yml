@@ -1,0 +1,20 @@
+---
+# USB Audio Devices
+#
+# Vendor and product IDs must be valid hexadecimal integers.
+#
+# Linux USB IDs: https://usb-ids.gowdy.us/
+modprobe_snd_usb_audio_devices:
+  # https://usb-ids.gowdy.us/read/UD/0763/2012
+  - name: "M-Audio Fast Track Pro"
+    vid: 0x763
+    pid: 0x2012
+    index: 5
+    enable: 1
+
+  # https://usb-ids.gowdy.us/read/UD/1235/8012
+  - name: "Focusrite Scarlett 6i6 (1st gen)"
+    vid: 0x1235
+    pid: 0x8012
+    index: 6
+    enable: 1

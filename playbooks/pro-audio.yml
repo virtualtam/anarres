@@ -1,7 +1,16 @@
 ---
 - name: Pro Audio
   hosts: archlinux
+  tags: ["pro-audio"]
   roles:
-    - vt.archlinux/user-limits
-    - vt.archlinux/audio-workstation
-    - vt.archlinux/purr-data
+    - role: vt.common/modprobe
+      tags: ["modprobe"]
+
+    - role: vt.archlinux/user-limits
+      tags: ["user-limits"]
+
+    - role: vt.archlinux/audio-workstation
+      tags: ["audio-workstation"]
+
+    - role: vt.archlinux/purr-data
+      tags: ["pure-data", "purr-data"]
