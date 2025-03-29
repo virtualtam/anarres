@@ -12,19 +12,6 @@
       loop_control:
         loop_var: "role_item"
 
-    - name: Deploy dotfiles
-      include_role:
-        name: vt.common/dotfiles
-      vars:
-        dotfiles_user_name: "{{ role_item.name }}"
-        dotfiles_user_group: "{{ role_item.group }}"
-        dotfiles_user_nick: "{{ role_item.nick }}"
-        dotfiles_user_email: "{{ role_item.email }}"
-        dotfiles_user_git_editor: "{{ role_item.git_editor }}"
-      loop: "{{ dotfiles_users }}"
-      loop_control:
-        loop_var: "role_item"
-
 - hosts: archlinux
   tasks:
     - name: Deploy Makepkg configuration

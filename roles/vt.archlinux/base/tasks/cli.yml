@@ -8,6 +8,7 @@
       - at
       - bash-completion
       - bat
+      - chezmoi
       - colordiff
       - dfc
       - dialog

@@ -1,14 +1,6 @@
 ---
 ansible_user: ansible
 
-dotfiles_users:
-  - name: john
-    group: doe
-    nick: John Doe
-    email: john@do.es
-  - name: root
-    group: root
-
 makepkg_users:
   - name: john
     group: doe

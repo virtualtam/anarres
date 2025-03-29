@@ -12,7 +12,6 @@ An Arch Linux development environment featuring:
   - system administration
   - archive management
   - ...
-- dotfiles
 
 Roles
 -----
