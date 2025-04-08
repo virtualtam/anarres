@@ -4,6 +4,8 @@
     name:
       - git
       - git-lfs
+      - github-cli
+      - glab
       - gource
       - mercurial
     state: present
