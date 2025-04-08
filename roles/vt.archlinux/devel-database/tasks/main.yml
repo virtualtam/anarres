@@ -2,8 +2,11 @@
 - name: Install database clients and development tools
   pacman:
     name:
+      - dbeaver
       - mariadb-clients
       - percona-toolkit
       - postgresql-libs
       - redis
+      - sqlfluff
+      - sqlite
     state: present

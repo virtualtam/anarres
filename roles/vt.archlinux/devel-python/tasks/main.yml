@@ -12,4 +12,5 @@
       - python-virtualenv
       - python-virtualenv-clone
       - ruff
+      - uv
     state: present
