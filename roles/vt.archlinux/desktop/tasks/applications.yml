@@ -3,6 +3,9 @@
   pacman:
     name:
       - alacritty
+      - ghostty
+      - ghostty-shell-integration
+      - ghostty-terminfo
       - gnome-keyring
       - keepassxc
       - numlockx
