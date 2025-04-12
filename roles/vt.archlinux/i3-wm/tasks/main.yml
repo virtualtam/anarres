@@ -19,4 +19,5 @@
       - read-edid
       - rofi
       - tk
+      - xclip
     state: present

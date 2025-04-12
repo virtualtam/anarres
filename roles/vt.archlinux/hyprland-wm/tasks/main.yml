@@ -11,6 +11,7 @@
       - wlr-randr
       - wofi
       - xdg-desktop-portal-gtk
+      - xdg-desktop-portal-wlr
     state: present
 
 - name: Install the Hyprland window manager
