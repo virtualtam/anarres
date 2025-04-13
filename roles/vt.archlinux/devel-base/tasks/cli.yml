@@ -7,6 +7,7 @@
       - bc
       - cloc
       - ctags
+      - d2
       - graphviz
       - just
       - maven
